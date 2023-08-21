@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 body {
-  text-align: center;
   transition: 0.3s;
-  margin: 6px;
-  padding: 6px;
+  margin: 0;
+  padding: 0;
   background-color: rgb(244, 241, 241);
   font-family: 'Poppins', sans-serif;
   color:rgb(57, 57, 57);
-
 }
 
 h1 {
-  text-align: center;
   font-size: 70px;
   line-height: 70px;
   font-weight: 300;
@@ -20,7 +17,6 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   font-size: 40px;
   line-height: 40px;
   font-weight: 300;
@@ -28,25 +24,22 @@ h2 {
 }
 
 p {
-  text-align: center;
   margin: 0px;
   font-size: 20px;
 }
 
 a {
-  text-align: center;
-  color:rgb(0,255,0);
+  color:rgb(162, 0, 255);
   font-size: 20px;
   text-decoration: none;
-  font-weight: 440;
+  font-weight: 100;
 }
 
 .dark a {
-  color:rgb(0,255,0);
+  color:rgb(246, 169, 241);
 }
 
 header {
-  text-align: center;
   display: flex;
   justify-content: flex-end;
   padding: 30px;
@@ -69,7 +62,7 @@ header {
   top: 5px;
   left: 5px;
   transition: 0.3s;
-  box-shadow:
+  box-shadow: 
     inset 4px 4px 4px rgb(255,255,255),
     inset -7px -7px 5px rgb(195 193 198 / 90%);
 }
@@ -80,7 +73,7 @@ header {
 }
 
 .dark .flicker {
-  transform: translateX(50px);
+  transform: translateX(40px);
 }
 
 .dark > * {
@@ -101,18 +94,10 @@ header {
   margin-bottom: 100px;
 }
 
-.main-textTipsPage {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 100px;
-  width: 95%
-}
-
 .square {
-  border-radius: 90px;
-  width: 90%;
-  margin: 10%;
-  height: 300px;
+  width: 98%;
+  margin: 1%;
+  height: 350px;
   background-color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -121,14 +106,70 @@ header {
   background-color: rgb(71, 71, 71);
 }
 
+#revenoo {
+  background-image: url("images/revenoo-app.png");
+  background-size: cover;
+}
+
+#burgerrator {
+  background-image: url("images/burgerrator.png");
+  background-size: cover;
+}
+
+#news {
+  background-image: url("images/news-app.png");
+  background-size: cover;
+}
+
+#dates {
+  background-image: url("images/dates-app.png");
+  background-size: cover;
+}
+
 .sub-section {
   display: flex;
   flex-wrap: wrap;
 }
 
+.hero-image {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.cube {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: rotate(-25deg) skew(25deg);
+}
+
+.cube:before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 100%;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+}
+
+.cube:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px;
+}
+
 #html {
   left: 100px;
-  bottom: 90px;
+  bottom: 80px;
+  background-image: url("images/html-square.png");
   background-size: cover;
   background-color: rgb(175, 119, 227);
   box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
@@ -139,15 +180,16 @@ header {
 }
 
 #html:after {
-  background-color: rgb(0, 188, 221);
+  background-color: rgb(205, 188, 221);
 }
 
 #css {
   left: 250px;
   bottom: 240px;
+  background-image: url("images/css-square.png");
   background-size: cover;
-  background-color: rgb(0, 119, 191);
-  box-shadow: -100px 100px 20px rgb(50 50 50/ 30%);
+  background-color: rgb(227, 119, 191);
+  box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
 }
 
 #css:before {
@@ -161,6 +203,7 @@ header {
 #javascript {
   left: 450px;
   bottom: 200px;
+  background-image: url("images/javascript-square.png");
   background-size: cover;
   background-color: rgb(119, 227, 186);
   box-shadow: -40px 40px 20px rgb(50 50 50/ 15%);
@@ -178,6 +221,7 @@ header {
 #react {
   left: 350px;
   bottom: 40px;
+  background-image: url("images/react-square.png");
   background-size: cover;
   background-color: rgb(119, 193, 227);
   box-shadow: -80px 80px 20px rgb(50 50 50/ 15%);
@@ -191,26 +235,10 @@ header {
   background-color: rgb(188, 200, 221);
 }
 
-hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-}
-
-hr:after {
-    background: #fff;
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
-}
-
 footer {
     display: flex;
     justify-content: center;
-    padding: 100px 20px;
+    padding: 100px 30px;
     background-color:rgb(136, 136, 136);
 }
 
@@ -226,6 +254,12 @@ footer {
   .square {
     width: 48%;
     margin: 1%;
-    height: 350px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-image {
+    display: none;
   }
 }
