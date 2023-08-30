@@ -211,11 +211,13 @@ footer {
     display: flex;
     justify-content: center;
     padding: 100px 20px;
-    background-color:rgb(136, 136, 136);
+    background-color:rgb(155, 155, 155);
+    border-radius: 90px;
 }
 
 .dark footer {
-  background-color:rgb(28, 28, 28);
+  background-color:rgb(20, 20, 20);
+  border-radius: 90px;
 }
 
 @media only screen and (min-width: 970px) {

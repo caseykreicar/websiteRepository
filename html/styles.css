@@ -1,0 +1,46 @@
+#enhancedParagraph {
+    text-align: center;
+    color:rgb(255,0,0);
+    background-color:rgb(255,190,170);
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 80px;
+}
+
+.important {
+    text-transform: uppercase;
+}
+
+.important.red {
+    color:rgb(255,0,0);
+}
+
+#vcu {
+    text-align: center;
+    display: table;
+    margin: auto;
+    background-color: rgb(240,240,210);
+}
+.vcuList {
+    text-align: center;
+    display: table;
+    margin: auto;
+}
+
+.listItems {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+.numbers {
+    color: rgb(175,15,155);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.videoBox {
+    padding-top: 56.25%:
+}
+
+.video {
+    position: absolute;
+}

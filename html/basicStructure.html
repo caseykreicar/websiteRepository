@@ -1,0 +1,708 @@
+<!--################################################-->
+<!--####   Basic HTML Structure with comments   ####-->
+<!--################################################-->
+<!--Declare document type ie..HTML-->
+<!DOCTYPE html>
+<!--html opening tag | signifies an html document and lang attribute sets language -->
+<html lang="en">              
+<!--header opening tag | signifies header information-->
+<header> 
+    <!--title opening tag | signifies information you want to show within browser search (not content on webpage)-->
+    <title> Web page about HTML structure </title>  
+    <!--meta data element and charaterset attribute, this is by default set to UTF-8 currently with HTML5 even without adding this element-->
+    <meta charset="UTF-8">
+    <!--css style sheet link, note the way this attribute value is formatted the .css file need to be located in the same directory-->
+    <link rel="stylesheet" href="styles.css"/>
+<!--header closing tag-->
+</header>
+<!--body opening tag | content being shown on page usually resides here-->
+<body>
+    <!--header content size 2 | displays header/title content within the web page itself-->
+    <h1>This web page demonstrates basic html structure and utilizes common HTML elements</h1>
+<!--paragraph markup tag-->
+<p>_____________________________</p>
+<p id="topic-1"></p>
+<p><h2>Structural Markup Elements:</h2></p>
+<h5>header size 5</h5>
+<h6>header size 6</h6>
+<p><b>Bold</b></p>
+<p><i>Italic</i></p>
+<!--superscript | commonly used in mathematics formulas-->
+<p>Superscript examples:</p>
+<p>  E = mc<sup>2</sup><p>
+<p>3x<sup>2</sup> - 2xy </p>
+<!-- subscript | commonly used in chemistry formulas-->
+<p>Subscript example: H<sub>2</sub>O</p>
+<!--line break | places content on the line below-->
+<p>Line <br> Break</p>
+<p>Horizontal Line</p>
+<hr />
+<!--id attribute | specifies an indentifiable element on the current page or alternate ones-->
+<p id="location-1">location-1</p>
+<p>_____________________________</p>
+<p id="topic-2"></p>
+<p><h2>Semantic Markup Elements:</h2></p>
+<!--strong | used to highlight keywords/content in bold on the web page-->
+<p>strong:   <strong>Beware</strong> the barrenness of a busy life.</p>
+<!--emphasis | used to place emphasis on keywords/content in italics on the web page-->
+<p>emphasis:  If a <em>Fudpucker</em> could <em>puck fud</em>, how much <em>fud</em> could a <em>Fudpucker puck</em> if a <em>Fudpucker</em> could <em>puck fud</em> ?</p>
+<p>quote: <q cite="https://www.goodreads.com/">You can please some of the people some of the time, you can please all of the people some of the time, but you can't please all of the people all of the time</q>- John Lydgate</p>
+<p>abbreviation:  my first computer programming teacher = John A. Palesis,<abbr title="Doctor of Philosophy"> Ph.D</abbr></p>
+<p>cite: 
+    <br>
+    <br> ExLibris Knowledge Center. (2023, July). <cite>Managing user roles.</cite>
+    <br><a href="https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/010Alma_Online_Help_(English)/050Administration/030User_Management/060Managing_User_Roles">https://knowledge.exlibrisgroup.com/Alma/Product_Documentation/010Alma_Online_H
+        elp_(English)/050Administration/030User_Management/060Managing_User_Roles</a>
+</p>
+<!--address | used for email, will open native email client software and automatically insert the provided email address as the recipient-->
+<p>address:
+     <address>
+        <a href="mailto:kreicarcl@alumni.vcu.edu">email me here</a>
+        <p>1234 Colonial Heights, VA.</p>
+     </address>
+</p>     
+<p>insert:  Hours of operation (MON 1 PM - 3 PM, TUE 3 PM - 5 PM, <ins>WED 1 PM - 3 PM,</ins> THU 10 AM - 6 PM, FRI 2 PM - 3 PM)</p>
+<p>delete:  Hours of operation (<del>MON 1 PM - 3 PM,</del> TUE 3 PM - 5 PM, WED 1 PM - 3 PM, THU 10 AM - 6 PM, FRI 2 PM - 3 PM)</p>
+<p>strikethrough: Grocery List (apples, milk, eggs, <s>pizza</s>)</p>
+<p>_____________________________</p>
+<p id="topic-3"></p>
+<h2>Lists:</h2>
+<p>ordered list:
+    <ol>
+        <!--title of list nested in ordered list element-->
+        <h4>Web Development Skills Roadmap</h4>
+        <li>Step 1: Learn HTML</li>
+        <li>Step 2: Learn CSS</li>
+        <li>Step 3: Learn programming logic and design</li>
+        <li>Step 4: Learn JS</li>
+        <li>Step 5: Work on projects</li>
+    </ol>
+</p>
+<p>unordered list:
+    <br>
+<!--title of list left outside of unordered list-->
+<h4>Kitchen Renovation Items </h4>
+    <ul>
+        <li>countertop</li>
+        <li>kitchen sink</li>
+        <li>vinyl flooring</li>
+        <li>vinyl flooring adhesive</li>
+        <li>kitchen faucet</li>
+    </ul>
+</p>
+<p>definition list:
+    <dl>
+        <dt>pen</dt>
+            <dd>An instrument used for writing or drawling in ink.</dd>
+        <dt>fudpucker</dt>
+            <dd>An unfortunate last name to have.</dd>
+        <dt>faux pa</dt>
+            <dd>An embarrassing social error.</dd>
+    </dl>
+</p>
+<p>nested list:
+<h4>Dairy Products</h4>
+    <ul>
+        <li>milk</li>
+        <li>cheese</li>
+            <ul>
+                <li>swiss</li>
+                <li>cheddar</li>
+            </ul>
+        <li>heavy cream</li>
+    </ul>
+</p>
+<p>_____________________________</p>
+<p id="topic-4"></p>
+<h2>Links:</h2>
+<p>Uniform Resource Locator (URL)</p>
+<p>
+    absolute urls:
+    <ul>
+        <li><a href="https://www.ebay.com">ebay</a></li>
+        <li><a href="https://www.amazon.com">amazon</a></li>
+        <li><a href="https://www.walmart.com">walmart</a></li>
+    </ul>
+</p>
+<p>
+    <br>
+    relative url:
+    <br>
+    <br>
+    <a href= "./helloWorld.html">helloWorld.html</a href>
+</p>
+<p>
+    <br>
+    email links:
+    <!--opens native email client on operating system to email corresponding address-->
+    <br>
+    <br>
+    <a href="mailto:kreicarcl@alumni.vcu.edu">email me</a>
+</p>
+<p>
+    <br>
+    open links in new window:
+    <br>
+    <br>
+    <a href="https://www.odu.edu" target="_blank">Old Dominion University Website</a>
+</p>
+<p>
+    <br>
+    link to specific part of current page:
+    <br>
+    <br>
+    <a href="#location-1">location-1</a>
+</p>
+<p>
+    <br>
+    link to specific part of another page (relative link):
+    <br>
+    <br>
+    <a href="./helloWorld.html#location-1">location-1</a>
+</p>
+<p>_____________________________</p>
+<p id="topic-5"></p>
+<h2>Images:</h2>
+<p>image:</p>
+<!--scalable vector image or .svg is resolution-independent (this is my favorite format for images because it won't look pixelated)-->
+<!--there is also an svg HTML element wich is used to define these image formats, <svg> defines the graphics in XML format-->
+<img src="./image.svg" alt="One cool emoji" title="Emoji"/>
+<p>image size:</p>
+<!--these are inline elements also, meaning that if other content is displayed on the same line it will be placed according to location from left to right, notice the <p> tag which is a block element so this content is on a new line-->
+<p>this is an emoji</p><img src="./image.svg" width="600" height="600"/><b>don't wear sunglasses indoors</b><img src="./image.svg" width="200" height="200"/><p></p><p>this is some paragraph text to show the spacial relationship of inline elements versus block elements</p>
+<p>figure:</p>
+<figure>
+    <img src="image.svg" width="100" height="100" alt="photo of an emoji"/>
+    <br>
+    <figcaption>Just an emoji with sunglasses.</figcaption>
+</figure>
+<img src="./pizza.gif" title="drippy pizza"/>
+<p>_____________________________</p>
+<p id="topic-6"></p>
+<h2>Tables:</h2>
+<p>table:</p>
+<!--table tag | creates a table-->
+<table>
+    <!--table row tag | creates a row on one line-->
+    <tr>
+        <!--table data | inputs table data-->
+        <td>X</td>
+        <td>O</td>
+        <td>O</td>
+
+    </tr>
+    <tr>
+        <!--table data | inputs table data-->
+        <td>O</td>
+        <td>X</td>
+        <td>O</td>
+
+    </tr>
+    <tr>
+        <!--table data | inputs table data-->
+        <td>X</td>
+        <td>O</td>
+        <td>X</td>
+    </tr>
+</table>
+<br>
+    <table>
+        <!--table row element tag | creates a row on one line-->
+        <tr>
+            <!--table data | inputs table data-->
+            <td>Red</td>
+            <td>Green</td>
+            <td>Blue</td>
+    
+        </tr>
+        <tr>
+            <!--table data element tag | inputs table data-->
+            <td>Blue</td>
+            <td>Blue</td>
+            <td>Green</td>
+    
+        </tr>
+        <tr>
+            <!--table data | inputs table data-->
+            <td>Red</td>
+            <td>Green</td>
+            <td>Red</td>
+    
+        </tr>
+        </table>
+<table>
+    <p>table headings/columns:</p>
+<tr>
+    <th></th>
+    <th scope="col">Monday</th>
+    <th scope="col">Tuesday</th>
+    <th scope="col">Wednesday</th>
+    <th scope="col">Thursday</th>
+    <th scope="col">Friday</th>
+</tr>
+<tr>
+    <th scope="row">Hours of Operation</th>
+    <td>8AM-9PM</td>
+    <td>7AM-6PM</td>
+    <td>8AM-9PM</td>
+    <td>closed</td>
+    <td>9AM-1PM</td>
+</tr>
+</table>
+<br>
+<p>spanning columns:</p>
+<table>
+    <tr>
+        <!--first table header is intentionally left empty to create an empty space-->
+        <th></th>
+        <th>10AM</th>
+        <th>11AM</th>
+        <th>12PM</th>
+        <th>1PM</th>
+    </tr>
+    <tr>
+        <th>Monday</th>
+        <td>Math Class</td>
+        <td colspan="2">[--Massage--Therapy--]</td>
+        <td>Art Class</td>
+    </tr>
+    <tr>
+        <th>Tuesday</th>
+        <td colspan="3">[------Kinesiology------Exam------]</td>
+        <td>Meeting</td>
+    </tr>
+    <tr>
+        <th>Wednesday</th>
+        <td></td>
+        <td>Lunch</td>
+        <td></td>
+        <td>Meeting</td>
+    </tr>
+</table>
+<br>
+<p>spanning rows:</p>
+<table>
+    <tr>
+        <th></th>
+        <th>Jimmy</th>
+        <th>Johnny</th>
+        <th>James</th>
+        <th>Jordan</th>
+    </tr>
+    <tr>
+        <th>2PM - 3PM</th>
+        <td></td>
+        <td>[Sentury Duty]</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>3PM - 4PM</th>
+        <td rowspan="2">[Sentry Duty]</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>4PM - 5PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>5PM - 6PM</th>
+        <td></td>
+        <td></td>
+        <td>[Sentury Duty]</td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>6PM - 7PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>[Sentury Duty]</td>
+    </tr>
+</table>
+<br>
+<p>long table:</p>
+<table>
+    <thead>
+        <tr>
+            <th>|___Date___|</th>
+            <th>|___Income___|</th>
+            <th>|___Expenditure___|</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1st of August</th>
+            <th>856.90</th>
+            <th>57.67</th>
+        </tr>
+        <tr>
+            <th>2nd of August</th>
+            <th>558.75</th>
+            <th>78.71</th>
+        </tr>
+        <tr>
+            <th>3rd of August</th>
+            <th>691.09</th>
+            <th>89.45</th>
+        </tr>
+        <tr>
+            <th>4th of August</th>
+            <th>542.00</th>
+            <th>99.99</th>
+        </tr>
+        <tr>
+            <th>5th of August</th>
+            <th>321.23</th>
+            <th>25.00</th>
+        </tr>
+        <tr>
+            <th>6th of August</th>
+            <th>1,857.05</th>
+            <th>899.97</th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td>4,827.02</td>
+            <td>1,250.79</td>
+        </tr>
+    </tfoot>
+</table>
+<p>_____________________________</p>
+<p id="topic-7"></p>
+<h2>Forms:</h2>
+<p>form structure:</p>
+<br>
+<form action="http://www.example.com/subscribe.php" method="get"></form>
+<p>this is where the form controls will appear</p>
+<br>
+<p>text input:</p>
+<br>
+<form action="http://www.example.com/login.php">
+    <p>Username:
+        <!--size is only used here for demonstration purposes, CSS should be used to control this-->
+        <input type="text" name="username" size="15" maxlength="30"/>
+    </p>
+</form>
+<br>
+<p>password input:</p>
+<br>
+<form action="http://www.example.com/login.php"> 
+    <p>Username:
+        <input type="text" name="username"/>
+    </p>
+    <p>Password:
+        <input type="text" password="password"/>
+    </p>
+</form>
+<br>
+<p>text area:</p>
+<form action="http://www.example.com/comments.php">
+    <p>What do you think about this web page?</p>
+    <textarea name="comments" cols="40" rows="6">Enter your comments... here</textarea>
+</form>
+<p>radio button:</p>
+<form action="http://www.example.com/profile.php">
+    <p>Please select your favorite flavor icecream:
+        <br>
+        <input type="radio" name="flavor" value="chocolate"/> chocolate
+        <!--checked attribute prefills/preselects the element's input/value-->
+        <input type="radio" name="flavor" value="vanilla" checked="checked"/> vanilla
+        <input type="radio" name="flavor" value="strawberry"/> strawberry
+    </p>
+</form>
+<br>
+<p>checkbox:</p>
+<form action="http://www.example.com/profile.php">
+    <p>Please select your favorite library service:</p>
+    <input type="checkbox" name="service" value="3D printing"/> 3D printing
+    <input type="checkbox" name="service" value="Study room reservations"/> Study room reservations
+    <input type="checkbox" name="service" value="InterLibrary Loan"/> Interlibrary Loan (ILL)
+    <input type="checkbox" name="service" value="Reference librarian consultations"/> Reference librarian consultations
+</form>
+<br>
+<p>drop down list box:</p>
+<form action="http://www.example.com/profile.php">
+    <p>Which branch of the U.S. Military has the highest ASVAB score requirement for enlistment?</p>
+    <select name="branch">
+        <option value="null"></option>   
+        <option value="Army">Army</option>
+        <option value="Navy">Navy</option>
+        <option value="Marines">Marines</option>
+        <option value="Air Force">Air Force</option>
+        <option value="Space Force">Space Force</option>
+        <option value="Coast Guard">Coast Guard</option>
+    </select>
+</form>
+<br>
+<p>multiple select box:</p>
+<form action="http://www.example.com/profile.php">
+    <p>Please select the following operating systems you are proficient using:</p>
+        <select name="operating systems" size="3" multiple="multiple">
+        <option value="macOS">macOS</option>
+        <option value="Windows">Windows</option>
+        <option value="GNU/Linux">GNU/Linux</option>
+        <option value="FreeBSD">FreeBSD</option>
+        </select>
+</form>
+<br>
+<p>file input box:</p>
+<form action="http://www.example.com/upload.php" method="post">
+    <p>&#8595Upload an MP3 formatted file below&#8595</p>
+    <input type="file" name="user-song"/>
+    <br>
+    <input type="submit" value="Upload"/>
+</form>
+<br>
+<p>submit button:</p>
+<form action="http://www.example.org/subscribe.php">
+    <p>Subscribe to our email list:</p>
+    <input type="text" name="email"/>
+    <input type="submit" name="subscribe" value="Subscribe"/>
+</form>
+<br>
+<p>image button:</p>
+<form action="http://www.example.com/add.php">
+    <button>
+        <img src="./plus.gif" alt="add" width="30" height="30"/>
+    </button>
+</form>
+<p>&#8593 Click the button to upload an image</p>
+<br>
+<p>labelling form controls:</p>
+<br>
+<label>Age: <input type="text" name="age"/></label>
+ <br>
+ Gender:
+ <input id="female" type="radio" value="f">
+    <label for="female">Female</label> 
+ <input id="male" type="radio" value="m">
+    <label for="male">Male</label>
+ <input id="not disclosed" type="radio" value="nd">
+    <label for="not disclosed">not disclosed</label>
+ <br>
+ <br>
+<p>grouping form element:</p>
+<br>
+<fieldset>
+    <legend>Enter Your Contact Details Below:</legend>
+        <label>Email:<br>
+            <input type="text" name="email" /><br></label>
+        <label>Phone:<br>
+            <input type="text" name="phone" /><br></label>
+    <input type="submit" value="submit">
+</fieldset>
+<br>
+<p>form validation:</p>
+<form action="http://www.example.com/login/" method="post">
+    <label for="username">&#128315 Username:</label>
+    <br>
+    <input type="text" name="username" required="required">
+    <br>
+    <label for="password">&#128315 Password:</label>
+    <br>
+    <input type="text" name="password" required="required">
+    <br>
+    <input type="submit" value="submit">
+</form>
+<br>
+<br>
+<p>date input:</p>
+<form action="http://www.example.com/bookings/" method="post">
+    <label for="dob">Please select your date of birth:</label>
+    <input type="date" name="dob"/>
+    <input type="submit" value="submit">
+</form>
+<br>
+<br>
+<p>email input:</p>
+<form action="http://example.org/subscribe.php">
+    <p>Please enter a valid email address:</p>
+    <input type="email" name="email" placeholder="Enter email address">
+    <input type="submit" value="submit">
+</form>
+<br>
+<br>
+<p>url input:</p>
+<form action="http://example.org/profile.php">
+    <p>Please enter a valid website address:</p>
+    <input type="url" name="website" placeholder="Enter website url" />
+    <input type="submit" value="submit">
+</form>
+<br>
+<br>
+<p>search input:</p>
+<form action="http://example.org/search.php">
+    <p>Search:</p>
+    <input type="search" name="search" />
+    <input type="submit" value="submit" />
+</form>
+<br>
+<br>
+<form action="http://example.org/search.php">
+    <p>Search:</p>
+    <input type="search" name="search" placeholder="Enter text here">
+    <input type="submit" value="submit">
+</form>
+<br>
+<p>_____________________________</p>
+<p id="topic-8"></p>
+<!--Really important topics covered in this chapter-->
+<h2>Extra Markup:</h2>
+<p>id attribute:</p>
+<p>normal paragraph element</p>
+<!--id (identifier) attribute allows one unique element to be named and be styled specifically in relation to the corresponding CSS document and it is represented as follows:
+#enhancedParagraph {text-align: center; color:rgb(255,0,0); background-color:rgb(255,190,170); font-size: 30px; font-weight: 700; border-radius: 80px;}-->
+<p id="enhancedParagraph">enhanced paragraph element example using CSS</p>
+<br>
+<p>class attribute:</p>
+<!--class attribute allows multiple/several elements (with inheritance) to be styled specifically in relation to the corresponding CSS document and it is represented as follows:
+important {text-transform: uppercase;-->
+<p class="important">This is an example of a class attribute</p>
+<!--class attribute allows multiple/several elements to be styled specifically in relation to the corresponding CSS document and it is represented as follows:
+.important.red {color: rgb(255,0,0);} it should also be noted that this class inherited the uppercase styling from the .important class as well-->
+<p class="important red">This is another example of a class attribute with two classes, it inherits the class style from the "important" class that affects both this class and the class above to make all the text uppercase but additionally adds a red class to color the text in red</p>
+<br>
+<p>grouping text & elements in a block:</p>
+<br>
+<!--div (division) attribute contains/controls elements within a block-->
+<div id="vcu">
+    <img src="headerBackground.jpg" alt="VCU Header" width="700"/>
+    <ul class="vcuList">
+        <br>
+        <li class="listItems"><b>Address:</b> 907 Floyd Ave <br> Richmond, VA 23284</li>
+        <br>
+        <li class="listItems"><b>Phone:</b> (804) 828-1981</li>
+        <br>
+        <br>
+    </ul>
+</div>
+<br>
+<br>
+<p>grouping text & elements inline:</p>
+<!--span is the inline equivalent to the div element, it purpose is to contain specific text or contain a number of inline elements-->
+<p>
+    The following text is using an example of span <span class="numbers">123456789</span> these numbers represent the span element content
+</p>
+<br>
+<p>iframe:</p>
+<iframe width="500" height="500" style="border:0" loading="lazy" allowfullscreen
+src="https://www.google.com/maps/embed/v1/place?q=Richmond,+VA,+USA&key=AIzaSyDFPCvBwe_qT2WTUEoO9OBCbLJpoU6yunY"></iframe>
+<br>
+<br>
+<p>escape characters:</p>
+<p>&lt;a href="http://latimere.io">Visit Casey's Website&lt;/a&gt;</p>
+<img src="./elementBreakdown.png"><img>
+<br>
+<br>
+<br>
+<p>HTML5 video (mp4 format):</p>
+<div class="videoBox">
+    <video class="video"></video>
+        <video src="./river.mp4" controls width="700"></video>
+</div>
+<br>
+<br>
+<p>HTML5 audio (mp3 format):</p>
+<img src="./rain.gif"></img>
+<br>
+<audio controls none>
+<source src="./rain.mp3" controls ><source>
+</audio>
+<p>&#8593 Press play for sound of rain</p>
+    
+<!-- 
+markup code runoff break
+-->
+<br>
+<br>
+<br>
+<p><b>Table of Contents:</p></b>
+<a href="#topic-1">Structural Markup Elements</a>
+<br>
+<a href="#topic-2">Semantic Markup Elements</a>
+<br>
+<a href="#topic-3">Lists</a>
+<br>
+<a href="#topic-4">Links</a>
+<br>
+<a href="#topic-5">Images</a>
+<br>
+<a href="#topic-6">Tables</a>
+<br>
+<a href="#topic-7">Forms</a>
+<br>
+<a href="#topic-8">Extra Markup</a>
+<br>
+<br>
+<br>
+<!--body closing tag-->
+</body>
+    <!--html closing tag-->
+</html>
+<!--
+______________________________________________________________________________________________________________
+########################################
+####             NOTES:             ####
+########################################
+
+Directory Structure naviation in HTML/hierachical order of rank for links
+
+current directory = <a href="reviews.html">Reviews</a>
+parent directory = <a href="folder/reviews.html">Reviews</a>
+grandparent directory = <a href="folder/folder/reviews.html">Reviews</a>
+that one weird uncle directory = this isn't a thing
+root directory search (I believe) = <a href="./reviews.html">Reviews</a>
+
+Indent to show parent/child relationship within HTML 
+
+<html>
+    <header>
+        <title> Title Here for web browser</title>
+    </header>
+    <body>
+        <h1> Header/Title for web page</h1>
+        <p> Any information/content you wish to display on the web page goes here</p>
+    </body>
+</html>
+______________________________________________________________________________________________________________
+TERMS:
+
+Tag(s) = Brackets with a character or character(s) inside representing HTML recognized code/script elements ie... <p> paragraph </p>
+Elements = The entire tag from start/opening tag to end/closing tag that represents an html function/component
+Attribute = provide additional information about HTML elements
+Attribute Name = Indicates what kind of extra information you are supplying about the element's content
+Attribute Value = Indicates the information of setting for the attribute
+
+______________________________________________________________________________________________________________
+HTML BREAKDOWN:
+
+ ___________________________Element_________________________
+|                                                           |
+        ______Attribute________
+       |                       |
+ _Tag_                           __Displayed_Content_  _Tag_
+|     |                         |                    ||     |
+    <a href="http://latimere.io">Visit Casey's Website</a>
+       |___| |_________________|
+         |            |
+ Attribute Name       |
+                Attribute Value
+
+______________________________________________________________________________________________________________
+ELEMENTS:
+
+block elements: (start a new line) <p>, <h1>, <ul>
+inline elements: (sit within block level) <b>, <em>, <img>
+    testnote
+information collection: this is done using forms, information from form elements are sent in name/value pairs
+
+______________________________________________________________________________________________________________
+-->
