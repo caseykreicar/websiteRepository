@@ -1,0 +1,550 @@
+/* This document demonstrates CSS or Cascading Style Sheets formatting in association with the css.html file */
+/* Comments Goe Here Between These Outside Marks */
+
+
+/*||||||||||||||||||||||||||||||||*/
+/*||||  VARIABLE FUNCTION  |||||||*/
+/*|||||||||||||||||||||||||||||||||*/
+:root {
+    --courier: 'Courier New', Courier, monospace;
+    --black: rgb(0,0,0);
+    --white: rgb(255,255,255);
+}
+/*|||||||||||||||||||||||||||||||||||||||||||||*/
+
+h4 {
+    color: rgb(40,40,40);
+    background-color: rgb(230,230,230);
+    padding: 80px;
+    /*font-family needs to have the font style installed on the computer locally*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    outline: 2px dashed;
+}
+
+h5 {
+    /*Variable Functions Applied*/
+    font-family: var(--courier);
+    background-color: var(--black);
+    color: var(--white);
+}
+/*|||||||||||||||||||||||||||||||||||||COLOR|||||||||||||||||||||||||||||||||||||||||||*/
+#paragraphExample01 span {
+    color: rgb(255,0,0);
+    text-transform: uppercase;
+    /*border is drawn inside the element's border*/
+    border: 1px solid rgb(0,0,0);
+    /*ouline is drawn outside the element's border, however is still within the margin*/
+    outline: 2px dashed;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rgbExample span {
+    color: rgb(0,128,0);
+    font-weight: 800;
+    outline: 1px solid;    
+}
+
+.hexExample span {
+    color: #00008B;
+    font-weight: 800;
+    outline: 1px solid;
+}
+
+.rgbaExample span {
+    color: rgba(75,0,130,0.25);
+    font-weight: 800;
+    outline: 1px solid;
+}
+
+.hslaExample span {
+    color: hsla(0,100%,50%,0.75);
+    font-weight: 800;
+    outline: 1px solid;
+}
+
+.important span {
+    /*!important is the nuclear option, used as a last resort to override a CSS declaration*/
+    color: red!important;
+}
+
+.important span {
+    color: blue;
+}
+
+.phScaleContainer {
+    /*margins affect outline size*/
+    outline: 2px dashed;
+    /*outermost*/
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*between margin & padding*/
+    border-left: 10px;
+    border-right: 10px;
+    border-top: 10px;
+    border-bottom: 10px;
+    /*innermost*/    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(240,240,200)
+}
+
+.phScale {
+    font-size: 28px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phScale details {
+    font-size: 14px;
+}
+
+.phScale.zero {
+    background-color: #da3d75;
+}
+
+.phScale.one {
+    background-color: #db5580;
+}
+
+.phScale.two {
+    background-color: #e0658a;
+}
+
+.phScale.three {
+    background-color: #e2749a;
+}
+
+.phScale.four {
+    background-color: #e587a7;
+}
+
+.phScale.five {
+    background-color: #e799b5;
+}
+
+.phScale.six {
+    background-color: #e7abc1;
+}
+
+.phScale.seven {
+    background-color: #23ab7e;
+}
+
+.phScale.eight {
+    background-color: #8dc4df;
+}
+
+.phScale.nine {
+    background-color: #75bada;
+}
+
+.phScale.ten {
+    background-color: #5fadd2;
+}
+
+.phScale.eleven {
+    background-color: #469fcb;
+}
+
+.phScale.twelve {
+    background-color: #3293c3;
+}
+
+.phScale.thirteen {
+    background-color: rgb(54,134,185);
+}
+
+.phScale.fourteen {
+    background-color: rgb(53,122,175);
+}
+/*the letter class declares a font, each class below (ie..   .red, .blue, .yellow  etc..) inherits this font as well but also delcares different color*/
+.letter {
+    font-size: 70px;
+    text-shadow: 1px 1px 2px rgb(0,0,0);
+}
+/*classes ie....   .letter  in this instance are the most common CSS selectors*/
+.letter.red {
+    color: rgb(255,0,0);
+}
+
+.letter.blue {
+    color: rgb(0,0,255);
+}
+
+.letter.yellow {
+    color: rgb(255,255,0);
+}
+
+.letter.green {
+    color: rgb(0,255,0);
+}
+
+.letter.orange {
+    color: rgb(255,165,0);
+}
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||TEXT||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.systemUiText {
+    font-family: system-ui;
+}
+
+.verdanaText {
+    font-family: verdana;
+}
+
+.arielText {
+    font-family: arial;
+}
+
+.timesNewRomanText {
+    font-family: 'Times New Roman';
+}
+
+
+.textExampleTable {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+.textExampleTable td {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+
+.textThree {
+    font-weight: 100;
+}
+
+.textOne {
+    font-weight: 600;
+}
+
+.textTwo {
+    font-weight: 1000;
+}
+
+.textSizeOne {
+    font-size: 50%;
+}
+
+.textSizeTwo {
+    font-size: 200%;
+}
+
+.textSizeThree {
+    font-size: 500%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.poppinsFont {
+    font-family: Poppins;
+    font-weight: 200;
+}
+
+.poppinsFont i {
+    font-weight: 600;
+}
+
+.decorationTextOverline {
+    text-decoration: overline;
+}
+
+.decorationTextLineThrough {
+    text-decoration: line-through;
+}
+
+.decorationTextUnderline {
+    text-decoration: underline;
+}
+
+.decorationTextBlink {
+    animation: blinker 1s linear infinite;
+    font-weight: 600;
+}
+
+@keyframes blinker {
+    50% {
+       opacity: 0; 
+    }
+}
+
+.lineHeightPositive {
+    line-height: 3.5em;
+}
+
+.lineHeightNegative {
+    line-height: .01em;
+}
+
+.letterSpacing-1 {
+    letter-spacing: 1.5em;
+}
+
+.letterSpacing-2 {
+    letter-spacing: 3em;
+    text-decoration: overline;
+}
+
+.wordSpacing {
+    word-spacing: 1em;
+}
+
+
+
+
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*id selectors ie..... #paragraphExample01 in this instance are not commonly used in CSS, these are more for specific use cases within HTML and JS*/
+#paragraphExample01 {
+    color: rgb(0,0,200);
+    font-size: 20px;
+    outline: 3px dotted;
+    text-align: right;
+    padding: 6px;
+    border: 6px;
+    margin: 6px;
+}
+
+#testListItem {
+    outline: 1px dotted;
+    margin-right: 50%;
+    text-align: center;
+}/*||||||||||||||||||||||||||||*/
+/*|||||||  FORM SECTION  ||||||*/
+/*||||||||||||||||||||||||||||*/
+
+#sloth {
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+#inputForm {
+    /*order of preference for font styles/typeface ie....font-family values*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: 2px dotted;
+    font-size: 11px;
+    font-weight: 999;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 66.6%;
+    padding-right: 1.5rem;
+}
+
+.blueForm {
+    background-color: rgb(204,229,255);
+}
+
+.submitButton {
+    position: absolute;
+    background-color: rgb(235,165,0);
+    font-weight: 600;
+}
+
+.submitButton.secure {
+    background-color: rgb(0,205,0);
+}
+
+#resetButton {
+    position: absolute;
+    left: 80%;
+}
+
+
+/*||||||||||||||||||||||||||||*/
+/*||||  TABLE SECTION  |||||||*/
+/*||||||||||||||||||||||||||||*/
+.scheduleTable {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(0,0,0);
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 1.0rem;
+}
+
+.scheduleTable.data {
+    background-color: rgb(250,235,215);
+}
+
+.scheduleTable.header {
+    background-color: rgb(140,140,185);
+    font-size: 20px;
+    font-weight: 950;
+    color: rgb(255,255,255);
+    text-shadow: 1px 1px 1px rgb(0,0,0);
+    padding: 4px;
+}
+/*||||||||||||||||||||||||||||*/
+
+/*||||||||||||||||||||||||||||*/
+#tableOfContentsBox {
+    outline: 1px dotted;
+}
+
+#tableOfContents {
+    color: rgb(0,200,0);
+    font-size: 30;
+    outline: 2px dashed;
+    padding: 50px;
+}
+/*||||||||||||||||||||||||||||*/
+/*||||||||   MENU     ||||||||*/
+/*||||||||||||||||||||||||||||*/
+
+details {
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+#menuImage {
+    box-shadow: 0 4px 8px rgb(0,0,2), 0 6px 20px rgb(0,0,3);
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1px
+}
+
+.menu {
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px;
+    outline: 1px dotted;
+  }
+  
+  .menu-text {
+    padding: 4px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-right: 80px;
+    outline: 1px dotted;
+  }
+
+  #menuHeader {
+    font-size: 46px;
+    color: rgb(255,0,0);
+    font-weight: 18;
+    margin-left: 450px;
+    margin-right: 5px;
+    padding-top: 6px;
+    text-shadow: 0 1px 2px rgb(0,0,2), 0 2px 6px rgb(0,0,3);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+
+  .coffeeMenu, tr {
+    padding: 2px;
+    text-align: left;
+  }
+
+  .coffeeMenu, th, td {
+    padding-bottom: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .priceFluctuates {
+    background-color: rgb(255,205,205)
+  }
+
+/*||||||||||||||||||||||||||||*/
+
+/*||||||||||||||||||||||||||||*/
+
+
+/*
+------------CSS Rule Structure-------------
+
+
+SELECTOR
+ _|_
+|   |
+  p {
+    font-family: Arial;
+    color: rgb(15,15,15); 
+    }
+    |____||______________|
+      |           |
+  Property      Value
+    |_____________________|
+              |
+         DECLARATION
+
+
+
+
+UNIVERSAL Selector:    * {}
+TYPE Selector:         h1, h2, h3 {}
+CLASS slector:         .note {}
+ID selector:           #introduction {}
+
+
+CHILD selector:             li>a {}
+DESCENDANT selector:        p a {}
+ADJACENT SIBLING selector:  h1+p {}
+GENERAL SIBLING selector:   h1~p {}
+
+CSS Rules Cascade: 
+
+* {                    <------- targets all elements on the page
+
+}
+
+i {
+    color:green
+}
+
+i {
+    color: red         <-------since this comes after it becomes the rule eventhough a rule precedes this one for the same element
+}
+
+b {
+    color: pink
+}
+
+p b {
+    color: blue !important;      <--------since this is declaration is marked important it will take precedent over the succeeding rule
+}
+
+p b {
+    color: violet;
+}
+
+
+
+HTML NOTES:
+
+Multiple Identifiers (ie... class and classes) with inheritance:
+
+HTML class IN HTML=   <p class="className">a unique paragraph with class attribute</p>
+HTML class IN CSS =   .className
+
+HTML classes IN HTML=   <p class="className paragraph-1">a child of the className paragraph class</p>
+HTML classes IN CSS =   .className.paragraph-1 {}
+
+
+Always use fallback fonts
+
+You can use pt instead of px for "printer-friendly" versions of pages
+
+*/

@@ -1,0 +1,501 @@
+<!--###################################################################################-->
+<!--####   Basic CSS Structure (in relation to this html document) with comments   ####-->
+<!--###################################################################################-->
+<DOCTYPE html>
+    <html>
+        <head>
+            <!--Poppins font link-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+            <!--CSS style document link-->
+            <link rel="stylesheet" href="./css.css">
+            <title>CSS basic overview</title>
+        </head>
+        <body>
+            <p id="topic-navigation-test"></p>
+            <header>
+                <h4>This web page demonstrates basic css </h4>
+            </header>
+            <p id="topic-1-css"></p>
+            <h3>Color:</h3>
+            <p>text color:</p>
+            <!--each span element has a specific class that all inherit the same font size, however each letter has a different color delcared-->
+            <span class="letter red">C</span><span class="letter blue">O</span><span class="letter yellow">L</span><span class="letter orange">O</span><span class="letter green">R</span>
+
+            <p id="paragraphExample01">Hi there! <span>(this right here is a span element nested in a paragraph element with a CSS declaration)</span>  This is also an example of using an id attribute with the paragraph element</p>
+<br>
+<p>color value options:</p>
+<p class="rgbExample"><span>RED GREEN BLUE (RGB) VALUE</span> declaration (property: color) & (value: rgb(0,128,0)) for the color "green" <span>color: rgb(0,128,0)</span></p>
+<p class="hexExample"><span>HEX CODE VALUE</span> declaration (property: color) & (value: #00008B) for the color "dark blue" <span>color: #00008B</span></p>
+<p class="rgbaExample"><span>RGBA VALUE (added opacity)</span> declaration (property: color) & (value: rgba(75,0,130,0.25)) for the color "indigo" with 25% opacity <span>color: rgba(75,0,130,0.25)</span></p>
+<p class="hslaExample"><span>HUE SATURATION LIGHTNESS ALPHA (HSLA) CODE VALUE</span> declaration (property: color) & (value: hsla(0,100%,50%,0.75)) for the color "red" with 75% opacity <span>color: hsla(0,100%,50%,0.75)</span></p>
+<br>
+<p>the nuclear option:</p>
+<p class="important">!important the <span>COLOR</span> text should absolutely be red here</p>
+<br>
+<p>ph scale (color using a table):
+    <div class="phScaleContainer">
+        <table class="phScale">
+            <tr></tr>
+            <td class="phScale fourteen">14.0 (ALKALINE)<details>Example: Sodium Hydroxide </details></td>
+            <tr></tr>
+            <td class="phScale thirteen">13.0</td>
+            <tr></tr>
+            <td class="phScale twelve">12.0</td>
+            <tr></tr>
+            <td class="phScale eleven">11.0</td>
+            <tr></tr>
+            <td class="phScale ten">10.0</td>
+            <tr></tr>
+            <td class="phScale nine">9.0</td>
+            <tr></tr>
+            <td class="phScale eight">8.0</td>
+            <tr></tr>
+            <td class="phScale seven">7.0 (NEUTRAL)<details>Example: Pure Water</details></td>
+            <tr></tr>
+            <td class="phScale six">6.0</td>
+            <tr></tr>
+            <td class="phScale five">5.0</td>
+            <tr></tr>
+            <td class="phScale four">4.0</td>
+            <tr></tr>
+            <td class="phScale three">3.0</td>
+            <tr></tr>
+            <td class="phScale two">2.0</td>
+            <tr></tr>
+            <td class="phScale one">1.0</td>
+            <tr></tr>
+            <td class="phScale zero">0.0 (ACIDIC)<details>Example: Hydrochloric Acid</details></td>
+        </table>
+
+    </div>
+</p>
+<br>
+
+<br>
+<p id="topic-2-css"></p>
+<h3>Text:</h3>
+<br>
+<p>typface terminology:</p>
+<p><b>System-UI:</b><span class="systemUiText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></p>
+<p><b>Ariel:</b> <span class="arielText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></p>
+<p><b>Times New Roman:</b> <span class="timesNewRomanText">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></p>
+<br>
+<p>weight:</p>
+<table class="textExampleTable">
+    <td>Text Weight:</td>
+    <td class="textThree">100</td>
+    <tr>
+        <td>Text Weight:</td>
+        <td class="textOne">600</td>
+    </tr>
+    <tr>
+        <td>Text Weight:</td>
+        <td class="textTwo">1000</td>
+    </tr>
+</table>
+<p>size:</p>
+<table class="textExampleTable">
+    <td>Text Size:</td>
+    <td class="textSizeOne">50%</td>
+    <tr>
+        <td>Text Size:</td>
+        <td class="textSizeTwo">200%</td>
+    </tr>
+    <tr>
+        <td>Text Size:</td>
+        <td class="textSizeThree">500%</td>
+    </tr>
+</table>
+<p>*note: you shouldn't use <span class="underline">absolute</span> units for font size ie... 32px, and you wouldn't necessarily use percentages on fonts either which are <span class="underline">relative</span> to another quantity.</p>
+<br>
+<p>linked font:</p>
+<p class="poppinsFont">this is a <i>Poppins</i> font using the link element for a google font api</p>
+<br>
+<p>text-decoration:</p>
+<p class="decorationTextOverline">overline</p>
+<p class="decorationTextLineThrough">line through</p>
+<p class="decorationTextUnderline">underline</p>
+<p class="decorationTextBlink">blink</p>
+<br>
+<p>line height, letter-spacing, & word-spacing:</p>
+<p class="lineHeightPositive">line-height 3.5em</p>
+<p class="lineHeightPositive">line-height 3.5em</p>
+<p class="lineHeightNegative">line-height .01em</p>
+<p class="lineHeightNegative">line-height .01em</p>
+<p class="letterSpacing-1">letter spacing 1.5 em</p>
+<p class="letterSpacing-2">letter spacing 3em</p>
+<p class="wordSpacing">word spacing 1em</p>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<p id="topic-mini-projects"></p>
+<h3>Form Input:</h3>
+<article id="contact">
+    <p>Submit Form:</p>
+    <!--get method is NOT SECURE, info input by user will show over url and http-->
+    <form action="https://httpbin.org/get" id="inputForm" method="get">
+        <img id="sloth" src="./sloth-photo-1170x780.jpg" title="Tell us about yourself">
+        <fieldset>
+            <legend>Info about You</legend>
+        <p>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Input here.." autocomplete="on" required>
+        </p>
+        <p>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Input here.." autocomplete="on" required>
+        </p>
+        <p>
+        <label for="password">Password:</label>
+        <!--input element with type attribute name and password attribute value hides user input for the text input for a "password entry"-->
+        <input type="password" name="lastName" id="password" placeholder="Input here.." required>
+        </p>
+        <p>
+        <label for="phone">Phone:</label>
+        <!--input with pattern attribute allows a specified criteria for input-->
+        <input type="tel" name="phone" id="phone" placeholder="800 500 5555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+        </p>
+        <p>
+        <label for="decade">Decade of Birth:</label>
+        <input type="number" name="decade" id="decade" min="1930" max="2020" step="10" value="1990">
+        </p>
+        <p>
+            <label for="beverages">Favorite Hot Beverage While Coding:</label>
+            <select name="beverages" id="beverages">
+                <optgroup label="Teas">
+                <option value="black tea">Black Tea</option>
+                <option value="green tea">Green Tea</option>
+                <option value="grey tea" selected>Earl Grey Tea</option> 
+                </optgroup>   
+                <optgroup label="Coffees">
+                <option value="coffee">Regular Coffee</option>
+                <option value="latte">Latte</option>
+                </optgroup>
+                <option value="other">Other</option>
+            </select>
+            </p>
+<!--datalist input for a form, user can type input and have it autofill relative to the option values-->
+            <p>
+                <label for="language">Favorite Coding Language:</label>
+                <input type="text" name="language" id="language" list="code-languages-list">
+                <datalist id="code-languages-list">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="C">
+                <option value="Fortran">
+                <option value="Cobol">
+                <option value="Other">
+                </datalist>
+            </p>
+    </fieldset>
+    <br>
+<!--(Radio buttons)-->
+    <fieldset class="blueForm">
+        <legend>Favorite Music Genre?</legend>
+        <p>
+            <input type="radio" name="music" id="country" value="country">
+            <label for="country">Country</label>
+        </p>
+        <p>
+            <input type="radio" name="music" id="rock" value="rock">
+            <label for="rock">Rock</label>
+        </p>        
+        <p>
+            <input type="radio" name="music" id="classic" value="classic">
+            <label for="classic">Classic</label>
+        </p>              
+    </fieldset>    
+    <br>
+<!--(Checkbox) Multiple selections-->
+    <fieldset>
+        <legend>Do you have pets?</legend>
+        <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+            <label for="dog">Dog</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pets" id="lizard" value="lizard">
+            <label for="lizard">Lizard</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pets" id="kangaroo" value="kangaroo">
+            <label for="kangaroo">Kangaroo</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pets" id="sloth" value="sloth">
+            <label for="sloth">Sloth</label>        
+        </p>                               
+    </fieldset>
+    <br> 
+    <!--NEVER SEND SENSITIVE INFO WITH A GET REQUEST (form action method attribute value at beginning of this form)-->
+    <button class="submitButton" type="submit">Submit Form (info not secure, input included in url)</button>
+    <br>
+    <br>
+    <br>
+    <!--SECURE WAY TO SUBMIT FORM INFORMATION (FORMMETHOD=post)-->
+    <button class="submitButton secure" formaction="https://httpbin.org/post" formmethod="post">Post Submit (doesn't show input in url)</button>
+    <br>
+    <br>
+    <br>
+    <button id="resetButton" type="reset">Reset Form</button>
+    </form>
+</article>
+<br>
+<br>
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<h3>CSS variables:</h3>
+<br>
+<p>var() function:</p>
+<h5>this h6 header uses a var (<i>--name, value</i>) function to apply CSS styling </h5>
+
+<br>
+<br>
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<h3>Schedule Table:</h3>
+<article id="scheduleTable">
+    <table class="scheduleTable">
+        <tr>
+            <th class="scheduleTable header">Time</th>
+            <th class="scheduleTable header">Activity</th>
+        </tr>
+        <tr class="scheduleTable row">
+            <td class="scheduleTable data">
+            <time datetime="09:00">9AM</time>-<time datetime="11:00">11AM</time>
+            </td>
+            <td>Check Emails & Apply for Jobs</td>
+        </tr>
+        <tr class="scheduleTable row">
+            <td class="scheduleTable data">
+            <time datetime="11:00">11AM</time>-<time datetime="12:00">12PM</time>
+            </td>
+            <td>Eat Lunch</td>
+        </tr>
+        <tr class="scheduleTable row">
+            <td class="scheduletable data">
+            <time datetime="12:00">12PM</time>-<time datetime="17:00">3PM</time>
+            </td>
+            <td>Learn HTML, CSS, JS</td>
+        </tr>
+        <tr>
+        <td colspan="2">*when writing code, be <b><i>DRY</i></b> (<b>D</b>on't <b>R</b>epeat <b>Y</b>ourself)</td>
+       </tr>
+       <tr>
+        <td colspan="2">optional: the same can be applied to your jokes as well (however use discretion)</td>
+       </tr>
+    </table>
+</article>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<h3>Short Restaurant Breakfast Beverage Menu:</h3>
+<article id="menu">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--inspired by/menu items borrowed from demolition coffee's menu Petersburg, VA-->
+<section class="menu">
+<div class="menu-text">
+<h1 id="menuHeader">COFFEE</h1>
+<details>Whole milk is standard - choose oat or almond milk for .80&cent; more</details>
+<br>
+<table class="coffeeMenu">
+<th >Drip Coffee</th>
+<td>$2.5/2.75/3.25</td>
+<th>Cold Brew</th>
+<td>$3.75</td>
+<th>Dirty Chai</th>
+<td>$5.25</td>
+<tr></tr>
+<td>8/12/16oz</td>
+<td>&nbsp;</td>
+<td>flash brewed</td>
+<td>&nbsp;</td>
+<td>expresso + 10oz milk +house made chai - hot/iced/frozen</td>
+<tr></tr>
+<th>Fast Forward</th>
+<td class="priceFluctuates">*ask for price</td>
+<th> Americano</th>
+<td>$3.5</td>
+<th>Wrecking Ball</th>
+<td>$6</td>
+<tr></tr>
+<td>light bodied + balanced, nutty + sweet</td>
+<td>&nbsp;</td>
+<td>espresso + water</td>
+<td>&nbsp;</td>
+<td>vanilla ice cream + chocolate sauce + espresso</td>
+<tr></tr>
+<th>Big Trouble</th>
+<td class="priceFluctuates">*ask for price</td>
+<th>Macchiato</th>
+<td>$3</td>
+<th>Dirty Banana</th>
+<td>$6.5</td>
+<tr></tr>
+<td>caramel +nutty + round</td>
+<td>&nbsp;</td>
+<td>espresso + hint of milk</td>
+<td>&nbsp;</td>
+<td>banana + caramel sauce + almond milk + espresso</td>
+<tr></tr>
+<th>Decaf</th>
+<td>$2.75</td>
+<th>Cappuccino</th>
+<td>$4</td>
+<th>Caramel Cookie Crunch</th>
+<td>$6.5</td>
+<tr></tr>
+<td>12oz</td>
+<td></td>
+<td>espresso + 2oz steamed milk + foam</td>
+<td>&nbsp;</td>
+<td>vanilla ice cream + chocolate chip cookie + caramel sauce + espresso</td>
+<tr></tr>
+<th>Cortada</th>
+<td>$3.5</td>
+<th>Mocha</th>
+<td>$4.75</td>
+<th>Latte</th>
+<td>$4.5</td>
+<tr></tr>
+<td>espresso + 2oz milk</td>
+<td>&nbsp;</td>
+<td>espresso + 10oz milk - hot/iced/frozen</td>
+<td>&nbsp;</td>
+<td>espresso +10oz milk + chocolate sauce - hot/iced/frozen</td>
+</table>
+<br>
+<h1 id="menuHeader">TEA</h1>
+<details>We proudly serve Roots Holistic tea blends. Handcrafted in Richmond.</details>
+<table class="coffeeMenu">
+<th>Roots Chai</th>
+<td>$3.25</td>
+<th>Refresh</th>
+<td>$3.25</td>
+<th>Sunshine</th>
+<td>$3.25</td>
+<tr></tr>
+<td>Spiced blend with notes of cinnamon, ginger, & nutmeg.</td>
+<td>&nbsp;</td>
+<td>A cool herbal blend that stimulates the taste buds & calms the system. Notes of fresh mint and lavender.</td>
+<td>&nbsp;</td>
+<td>An herbal blend with notes of citrus. Tart & naturally sweet with a beautiful bright pink color.</td>
+<tr></tr>
+<th>Easy Rise</th>
+<td>$3.25</td>
+<th>Open Heart</th>
+<td>$3.25</td>
+<th>Tulsi Green</th>
+<td>$3.25</td>
+<tr></tr>
+<td>Uplifting blend with notes of peppermint & lemongrass.</td>
+<td>&nbsp;</td>
+<td>A floral blend with subtle notes of lavender & rose.</td>
+<td>&nbsp;</td>
+<td>An aromatic blend with subtle notes of sweet mint & basil.</td>
+<tr></tr>
+</table>
+<br>
+
+
+
+</div>
+<img id="menuImage" src="./menu.png" title="Menu items for Demolition Coffee located in Petersburg, VA">
+
+</section>
+
+</article>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<div id="tableOfContentsBox">
+<ul>
+<p id="tableOfContents" title="this is intended to look like $h!t for the purpose of demonstrating boxes around html elements">Table of Contents:</p>
+<li><a href="#topic-1-css">Color</a></li>
+<li><a href="#topic-2-css">Text</a></li>
+<li><a href="#topic-3-css">Boxes</a></li>
+<li><a href="#topic-4-css">Lists, Tables, Forms</a></li>
+<li><a href="#topic-5-css">Layout</a></li>
+<li><a href="#topic-6-css">Images</a></li>
+<li><a href="#topic-7-css">blank</a></li>
+<li><a href="#topic-8-css">blank</a></li>
+<li><a href="#topic-9-css">blank</a></li>
+<li id="testListItem"><a href="#topic-navigation-test">test to top of page</a></li>
+<li><a href="#topic-mini-projects">Additional Mini Projects</a></li>
+</ul>
+</div>
+
+        </body>
+    </html>
+
+
+
+
+
+
+
+
+<!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+<!--                 NOTES:
+
+Unique element Identifier (1):
+
+HTML identifier IN HTML=     <p id="identifierName">a unique paragraph with an id attribute</p>
+HTML identifier IN CSS=      #identifierName {}
+
+
+
+Multiple Identifiers (ie... class and classes) with inheritance:
+
+HTML class IN HTML=   <p class="className">a unique paragraph with class attribute</p>
+HTML class IN CSS =   .className
+
+HTML classes IN HTML=   <p class="className paragraph-1">a child of the className paragraph class</p>
+HTML classes IN CSS =   .className.paragraph-1 {}
+
+
+
+*Organize forms into different sections when forms are long
+
+
+Check CSS rules of specificity using Google Chrome Inspect/Dev Tool and hover over an element, it will show you all CSS declarations applied
+
+
+Be DRY (Don't Repeat Yourself)
+
+Use GNU Image Manipulation Program (GIMP) as a tool to select colors, it has html hexcode and rgb displayed and you could import an image and use the eye drop selector
+to find out the exact color code for something on an image to match it.     also use rapidtables.com   RGB color
+
+Form elements do not inherit font settings
+
+You will learn more by struggling with the code
+
+-->
+<!--###################################################################################-->
