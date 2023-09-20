@@ -79,11 +79,14 @@
     opacity: 1;
   }
 }
-/*||||||||||||||||||||||||||||||||||||||||||ROTATING CLOVER IMAGE||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||ROTATING CLOVER IMAGE & FADE OUT WITH HOVER||||||||||||||||||||||||||||||||||||*/
 
 .rotatingImage {
   animation: rotation 18s infinite linear;
-  margin-left: 15px;
+}
+
+.rotatingImage:hover {
+  animation: rotationFadeAway 3.5s forwards;
 }
 
 @keyframes rotation {
@@ -95,21 +98,40 @@
   }
 }
 
+@keyframes rotationReverse {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotationFadeAway { 
+  0% {
+    opacity: 1;
+  }
+  
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
 /*||||||||||||||||||||||||||||||||||||||||FADE IN PHOTO OF ME|||||||||||||||||||||||||||||||||||||||*/
 
-.card-container{
+.image-container{
   display: flex;
   justify-content: center;
-  gap: 10px
 }
 
-
-.card {
-  animation: fade 2.8s;
+.image {
+  opacity: 0;
 }
 
-.card.show {
-  animation: fade 2.8s;
+.image.show {
+  animation: fade 2.8s forwards;
+  opacity: 1;
+  transform: translate(170px, 170px);
 }
 
 @keyframes fade {
@@ -123,14 +145,6 @@
   }
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
 
 
 
@@ -220,10 +234,17 @@ a {
   font-weight: 440;
 }
 
+
 .dark a {
   color: rgb(145,214,11);
   text-shadow: 1px 1px 1px rgb(0,0,0);
 }
+
+a[margin] {
+margin-left: 30px;
+margin-right: 30px;
+}
+
 
 .dark .portfolio {
   color:rgb(255,255,255);

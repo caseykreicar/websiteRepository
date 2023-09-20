@@ -6,12 +6,18 @@ switchElement.addEventListener('click', () => {
 })
 
 /*fade in animation*/
+const images = document.querySelectorAll(".image")
+
 const observer = new IntersectionObserver(entries => { 
   entries.forEach(entry => {
-    if(entry.isIntersection){
-      document.querySelectorAll("card-container")[0].classList.add("card");
-    }
+    entry.target.classList.toggle("show", entry.isIntersecting)
+    if (entry.isIntersecting) observer.unobserve(entry.target)
   })
+},
+{
+    threshold: .1,
+}
+)
+images.forEach(image => {
+  observer.observe(image)
 })
-
-observer.observe(document.querySelector(".card"));
