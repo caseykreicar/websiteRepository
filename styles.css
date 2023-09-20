@@ -5,17 +5,97 @@
    / \  🌐 Website http://latimere.io
  _|   |_  
 */
+  /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+ /*||||||||||||||||||||||||||||||||||||||CSS||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
 
 .blink {
-  animation: blinker 4s linear infinite;
+  animation: blinker 6s 8s linear infinite;
+  text-shadow: 0px 0px 10px rgb(110,110,110);
 }
 @keyframes blinker {
   50%{
     opacity: 0;
   }
 }
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.rotatingText { 
+  align-items: center;
+  display: flex;
+  height: 10vh;
+}
+
+.rotatingText-content { 
+  position: relative;
+  width: 100%;
+}
+
+.rotatingText-description { 
+  font-size: 100px;
+  margin: 0;
+  @media (min-width: 768px) { 
+  }
+}
+
+.rotatingText-adjective { 
+
+  left: 0;
+  margin-bottom: 0;
+  margin-top: 30px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  
+  @media (min-width: 768px) { 
+    font-size: 70px;
+  }
+  
+  &:nth-of-type(1) { 
+    animation: fade-text-in 11s 1s forwards; 
+  }
+  
+  &:nth-of-type(2) { 
+    animation: fade-text-in 13s 3s forwards; 
+  }  
+  
+  &:nth-of-type(3) { 
+    animation: fade-text-in 15s 5s forwards;
+  }
+}
+
+
+@keyframes fade-text-in { 
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 80px, 0);
+  }
+  
+  50%, 100% {
+    opacity: 1;
+  }
+}
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.rotatingImage {
+  animation: rotation 18s infinite linear;
+  margin-left: 15px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
 
 body {
   text-align: center;
@@ -33,8 +113,14 @@ h1 {
   font-size: 70px;
   line-height: 70px;
   font-weight: 300;
+  text-shadow: 2px 2px 0px rgb(255,255,255);
   margin: 10px 0;
   color: rgb(0,0,0);
+}
+
+h1 b {
+  font-size: 100px;
+  text-shadow: 0px 0px 100px rgb(145,214,11);
 }
 
 .dark h1 {
@@ -54,6 +140,11 @@ h2 {
   margin: 50px 0 10px 0;
 }
 
+.portfolio {
+  color: rgb(0,0,0);
+  font-weight: 700
+}
+
 p {
   text-align: center;
   margin: 0px;
@@ -62,15 +153,22 @@ p {
 
 a {
   text-align: center;
-  color:rgb(0,255,0);
+  color: rgb(145,214,11);
   font-size: 20px;
+  text-shadow: 1px 1px 1px rgb(0,0,0);
   text-decoration: none;
   font-weight: 440;
 }
 
 .dark a {
-  color:rgb(0,255,0);
+  color: rgb(145,214,11);
+  text-shadow: 1px 1px 1px rgb(0,0,0);
 }
+
+.dark .portfolio {
+  color:rgb(255,255,255);
+}
+
 
 header {
   text-align: center;
@@ -144,6 +242,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+}
+
+#oduLink {
+  color: rgb(0,210,0);
+  text-shadow: 0px -1px 3px rgb(0,0,0);
 }
 
 .main-text {

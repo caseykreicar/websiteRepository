@@ -5,6 +5,11 @@
    / \  🌐 Website http://latimere.io
  _|   |_  
 -->
+<!-- 
+  //////////////////////////////////////////////////////////////////////////////////////////
+ /////////////////////////////////////////////HTML/////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +23,7 @@
   </head>
   <body>
     <header>
-    <p class="blink"><b>dark mode</b> ⮕ </p>
+    <p class="blink"><b>dark mode</b>⮕</p>
       <div class="switch">
         <!--actual interactive button div element-->
         <div class="flicker"></div>
@@ -29,8 +34,17 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
     <section>
-        <h1><b> Casey Latimere Kreicar </b></h1>
+      <section class="rotatingText">
+      <div class="rotatingText-content">
+        <h1><b><span class="rotatingText-adjective">Casey</span><span class="rotatingText-adjective"> Latimere</span><span class="rotatingText-adjective"> Kreicar</span></b></h1>
+      </div>
+    </section>
+
+        <img class="rotatingImage" src="./Images/clover.png" width="5%">
+        <br>
         <br/>
         <h3> Welcome to my personally maintained website; made possible by <a href ="https://www.gnu.org/gnu/gnu.html"> GNU</a><sup>®</sup>/<a href ="https://kernel.org"> Linux</a><sup>®</sup> & <a href="https://apache.org"> Apache</a><sup>®</sup> </h3>
         <br/>
@@ -39,9 +53,13 @@
           <br />
           <p>This web page also subsequently serves as my own personally maintained ePortfolio, which currently includes work I completed within the MLIS program at Old Dominion University.</p>
        <br/>
-          <p>⇩ ePortfolio ⇩ </p>
+
        <br/>
-          <a href="#footer"><b> → email / contact info ← </b></a>
+          <a href="#footer"><b> &#8250; email / contact info &#8249; </b></a>
+          <br>
+          <br>
+          <br>
+          <a href="#graduatePortfolio" class="portfolio">⇩ ePortfolio ⇩ </a>
       </div>
     </section>
     <br>
@@ -94,10 +112,11 @@
     </section>
     <hr />
     <br>
+    <p id="graduatePortfolio"></p>
     <div class="heading">
     <h1>MLIS Graduate Projects</h1>
     <h5> (*To access my official ODU ePortfolio please enter the following four letter password: <i class="password">LIBS</i> in all CAPS when prompted to access my ePortfolio) </h5>
-    <p><b>Official ODU MLIS ePortfolio:</b><a href="https://sites.wp.odu.edu/mlis-ckrei003/wp-login.php?privacy=4&redirect_to=https%3A%2F%2Fsites.wp.odu.edu%2Fmlis-ckrei003%2F"> → ODU ePortfolio ←</a></p>
+    <p><b>Official ODU MLIS ePortfolio:</b><a id="oduLink" href="https://sites.wp.odu.edu/mlis-ckrei003/wp-login.php?privacy=4&redirect_to=https%3A%2F%2Fsites.wp.odu.edu%2Fmlis-ckrei003%2F"> → ODU ePortfolio ←</a></p>
   </div>
   <br>
   <hr/>
@@ -178,7 +197,6 @@
         <a href="assessmentPlan.pdf"> → Library Public Computer Usage Assessment ← </a>
       </div>
     </section>
-
 <hr />
 <br>
     <footer id="footer">
@@ -187,3 +205,4 @@
     <script src="scripts.js"></script>
   </body>
 </html>
+<!--////////////////////////////////////////END///////////////////////////////////////////////-->
