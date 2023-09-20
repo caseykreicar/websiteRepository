@@ -1,5 +1,12 @@
+/*
+👋.Hi, I’m @caseykreicar
+  \😎.'I’m interested in learning... HTML, CSS, JS, PY, PHP, & SQL.🌱
+    ▌l👉 Here is how to reach me ...📫 ✨ kreicarcl@alumni.vcu.edu ✨
+   / \  🌐 Website http://latimere.io
+ _|   |_  
+*/
 /* This document demonstrates CSS or Cascading Style Sheets formatting in association with the css.html file */
-/* Comments Goe Here Between These Outside Marks */
+/* Comments Goe Here Between These Symbols */
 
 
 /*||||||||||||||||||||||||||||||||*/
@@ -20,7 +27,18 @@ h4 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
     text-align: center;
-    outline: 2px dashed;
+    outline: 2px solid;
+}
+
+h3 {
+    color: rgb(40,40,40);
+    background-color: rgb(230,230,230);
+    padding: 20px;
+    /*font-family needs to have the font style installed on the computer locally*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    outline: 1px dashed;
 }
 
 h5 {
@@ -29,7 +47,7 @@ h5 {
     background-color: var(--black);
     color: var(--white);
 }
-/*|||||||||||||||||||||||||||||||||||||COLOR|||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||BOXES||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 #paragraphExample01 span {
     color: rgb(255,0,0);
     text-transform: uppercase;
@@ -272,8 +290,10 @@ h5 {
     text-decoration: underline;
 }
 
+/*||||||||||||||||||||BLINK ANIMATION||||||||||||||||||||||||*/
+
 .decorationTextBlink {
-    animation: blinker 1s linear infinite;
+    animation: blinker 2s linear infinite;
     font-weight: 600;
 }
 
@@ -282,6 +302,8 @@ h5 {
        opacity: 0; 
     }
 }
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 .lineHeightPositive {
     line-height: 3.5em;
@@ -304,12 +326,217 @@ h5 {
     word-spacing: 1em;
 }
 
+.leftAlign {
+    text-align: left;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.justifyAlign {
+    text-align: justify;
+}
+
+.alignImage {
+    width: 5%;
+}
+
+#textTop {
+    vertical-align: top;
+}
+
+#textBaseline {
+    vertical-align: baseline;
+}
+
+.indentText {
+    text-indent: 20px;
+}
+
+.textShadow {
+    /*first value: length right or left shadow will fall | second value: distance top or bottom shadow will fall | third value: blur*/
+    text-shadow: -2px 3px 7px rgb(0,0,0);
+}
+
+.firstLetter:first-letter {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.firstLetter {
+    text-indent: 20px;
+}
+
+.linkStyling.a {
+    color: rgb(255,105,0);
+    text-decoration: overline;
+}
+
+.linkStyling.b:visited {
+    color: rgb(255,255,255);
+}
+
+.linkStyling.c:hover {
+    color: rgb(255,0,0)
+}
+
+.linkStyling.d {
+    color: rgb(0,0,255)
+}
+
+/*||||||||||||||||||||||||||||||||||||||||||||ANIMATE TEXT or ROTATE TEXT ELEMENTS IN AND OUT|||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.rotatingText { 
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    text-align: left;
+  }
+  
+  .rotatingText-content { 
+    position: relative;
+    width: 100%;
+  }
+  
+  .rotatingText-description { 
+    font-size: 14px;
+    margin: 0;
+    
+    @media (min-width: 768px) { 
+      font-size: 18px;
+    }
+  }
+  
+  .rotatingText-adjective { 
+
+    font-size: 40px;
+    left: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    text-transform: uppercase;
+    top: 0;
+    
+    @media (min-width: 768px) { 
+      font-size: 40px;
+    }
+    
+    &:nth-of-type(1) { 
+      animation: rotate-text-up 4s 2s; 
+    }
+    
+    &:nth-of-type(2) { 
+      animation: rotate-text-up 4s 5.5s; 
+    }  
+    
+    &:nth-of-type(3) { 
+      animation: fade-text-in 4s 8.5s forwards;
+    }
+  }
+
+/* &:nth-of-type(1) { 
+      animation: rotate-text-up 1.5s .75s; 
+    }
+    
+    &:nth-of-type(2) { 
+      animation: rotate-text-up 1.5s 2s; 
+    }  
+    
+    &:nth-of-type(3) { 
+      animation: fade-text-in 1.5s 3.25s forwards;
+    }
+  }*/
+
+  @keyframes rotate-text-up { 
+    0% {
+      transform: translate3d(0, 80px, 0);
+      opacity: 0;
+    }
+    
+    20%, 80% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translate3d(0, -40px, 0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fade-text-in { 
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 80px, 0);
+    }
+    
+    50%, 100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||ROTATING IMAGE||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*see if you can make the rotating image the entire background?*/
+.rotatingImage {
+    animation: rotation 4s infinite linear;
+    margin-left: 15px;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||BOXES||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 
 
 
 
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*id selectors ie..... #paragraphExample01 in this instance are not commonly used in CSS, these are more for specific use cases within HTML and JS*/
 #paragraphExample01 {
     color: rgb(0,0,200);
@@ -365,6 +592,15 @@ h5 {
 #resetButton {
     position: absolute;
     left: 80%;
+}
+
+#activebutton:active {
+    background: rgb(0,0,0);
+    color: rgb(255,0,0);
+}
+
+#hoverbutton:hover {
+    background: rgb(0,255,255);
 }
 
 
@@ -467,10 +703,7 @@ details {
     background-color: rgb(255,205,205)
   }
 
-/*||||||||||||||||||||||||||||*/
-
-/*||||||||||||||||||||||||||||*/
-
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||NOTES:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /*
 ------------CSS Rule Structure-------------
@@ -530,6 +763,17 @@ p b {
     color: violet;
 }
 
+Attribute Selectors:
+                                                                              ie..... <p value="animal"><p>
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|__(SELECTOR)__|__(Meaning)____|_____(Example)____|________________________________________Explanation__________________________________________________________________|
+|EXISTENCE     |      []       |    p[animal]     | Targets any <p> element with an attribute called animal                                                             |
+|EQUALITY      |      [=]      | p[animal="dog    | Targets any <p> element with an attribute called animal with value of dog                                           |
+|SPACE         |      [~=]     | p[animal~="dog"] | Targets any <p> element with an attribute called animal with a list of space-separated words one of which being dog |
+|PREFIX        |      [^=]     | p[attr^"d"]      | Targets any <p> element with an attribute whose value begins with the letter "d"                                    |
+|SUBSTRING     |      [*=]     | p[attr*"do"]     | Targets any <p> element with an attribute whose value contains the letters "do"                                     |
+|SUFFIX        |      [$=]     | p[attr$"g"]      | Targets any <p> element with an attribute whose value ends with the letter "g"                                      |
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
 HTML NOTES:
@@ -541,7 +785,6 @@ HTML class IN CSS =   .className
 
 HTML classes IN HTML=   <p class="className paragraph-1">a child of the className paragraph class</p>
 HTML classes IN CSS =   .className.paragraph-1 {}
-
 
 Always use fallback fonts
 
