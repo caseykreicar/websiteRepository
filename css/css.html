@@ -205,8 +205,405 @@
 <img class="rotatingImage"src="./rotatingImage.png" class="rotate" width="100" height="100" title="flush me!"/>
 <br>
 <br>
+<p id=topic-3-css></p>
 <h3>Boxes:</h3>
 <br>
+<p>width and height:</p>
+<p>( l x w ) = (200px x 200px)</p> 
+<p>There is no padding, border, or margin specified in css;  &lt;div&gt; element has a blue background color while the &lt;p&gt; element has a purple background color </p> 
+<div id="box-01">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga repellendus blanditiis corrupti doloribus accusantium nulla qui ipsum rem aliquam perspiciatis!</p>
+</div>
+<br>
+<br>
+<p>limiting width:</p>
+<br>
+<table class="box-02">
+    <tr>
+        <th>Photo</th>
+        <th>Description</th>
+        <th>Salary</th>    
+        <th>Years</th>
+    </tr>
+    <tr>
+        <td><img src="./avatar.jpg" width="5%" title="employee-01"></img></td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, porro?</td>
+        <td>$40,000</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td><img src="./avatar.jpg" width="5%" title="employee-02"></img></td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, magni.</td>
+        <td>$37,000</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td><img src="./avatar.jpg" width="5%" title="employee-03"></img></td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, labore!</td>
+        <td>$42,000</td>
+        <td>7</td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<p>box design differentiation:</p> 
+<p>table with red (dotted) <b>outline</b> and green (solid) <b>border</b> to demonstrate margin, border, and padding differentiation ( &lt;tr&gt; element is using black solid border outline)</p>
+<br>
+<table class="box-03">
+    <tr>
+        <th>Photo</th>
+        <th>Description</th>
+        <th>Salary</th>    
+        <th>Years</th>
+    </tr>
+    <tr>
+        <td><img src="./avatar.jpg" width="5%" title="employee-01"></img></td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, porro?</td>
+        <td>$40,000</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td><img src="./avatar.jpg" width="5%" title="employee-02"></img></td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, magni.</td>
+        <td>$37,000</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td><img src="./avatar.jpg" width="5%" title="employee-03"></img></td>
+        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, labore!</td>
+        <td>$42,000</td>
+        <td>7</td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<p>limiting height:</p>
+<br>
+<p>the &lt;p&gt; element with the Lorem text content that is nested within a within  &lt;div&gt; element is limited to 20px which creates an overflow problem over other elements</p>
+<div class="box-04">
+    <p><b>HELLO WORLD</b></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident obcaecati et similique soluta quam reiciendis asperiores, error repellat autem enim dicta mollitia, inventore fugiat? Blanditiis unde minima aut nostrum. Officia expedita consectetur tenetur iusto enim at accusamus obcaecati, delectus quam dolorum hic, iste sapiente architecto molestias nisi ad rem et nulla eum culpa eveniet mollitia quasi tempora veniam? Debitis ut ex non, earum blanditiis quibusdam reprehenderit. In ad consequuntur maxime dolores veniam nam et asperiores qui exercitationem quibusdam voluptatum soluta, possimus, sequi quae odit quod obcaecati incidunt, doloremque aliquid facere corrupti perferendis? Explicabo, quas ipsum nostrum deleniti esse deserunt ab?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis explicabo fugit praesentium maxime reprehenderit voluptatem vel natus alias quas! Modi repellat non magni saepe quibusdam rerum quae distinctio veritatis necessitatibus facilis error odio natus maiores cumque architecto iure ipsum vero temporibus hic delectus, facere culpa ipsa ea? Quaerat voluptas nesciunt dicta praesentium excepturi accusantium beatae aut quo veniam tempore laboriosam assumenda earum possimus reprehenderit consequuntur cupiditate rerum quas, iusto officia autem repudiandae? Consequuntur nesciunt earum facilis? Animi consectetur harum neque dicta cum fugit, velit dignissimos consequuntur perspiciatis suscipit temporibus voluptatibus deleniti, nostrum ut sapiente nemo placeat fuga atque ipsam nisi?</p>
+    <p><b>HELLO WORLD</b></p>
+</div>
+<p><b>HELLO WORLD</b></p>
+<p><b>HELLO WORLD</b></p>
+<br>
+<br>
+<p>overflowing content fix method within a box:</p>
+<br>
+<div class="box-05">
+    <p><b>HELLO WORLD</b></p>
+    <p id="overflow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste illo, earum vitae laudantium ut, quos corrupti atque dicta magnam nihil accusamus facilis sed animi itaque unde, odit exercitationem magni placeat fuga? Nisi reiciendis quis, voluptatum vero molestias officiis, sit ad neque illum deleniti, pariatur possimus tenetur maiores? Officia deserunt, amet explicabo cum possimus, sint ratione dolorum esse nam et voluptates vitae modi! Iste esse cupiditate, aut itaque labore voluptatibus sed distinctio officia modi voluptatem placeat reiciendis tempore consequuntur, excepturi corrupti numquam hic provident, natus autem quo ex eveniet quibusdam odio! Perferendis est id ipsum, quae commodi cupiditate vero? Eum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident obcaecati et similique soluta quam reiciendis asperiores, error repellat autem enim dicta mollitia, inventore fugiat? Blanditiis unde minima aut nostrum. Officia expedita consectetur tenetur iusto enim at accusamus obcaecati, delectus quam dolorum hic, iste sapiente architecto molestias nisi ad rem et nulla eum culpa eveniet mollitia quasi tempora veniam? Debitis ut ex non, earum blanditiis quibusdam reprehenderit. In ad consequuntur maxime dolores veniam nam et asperiores qui exercitationem quibusdam voluptatum soluta, possimus, sequi quae odit quod obcaecati incidunt, doloremque aliquid facere corrupti perferendis? Explicabo, quas ipsum nostrum deleniti esse deserunt ab?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis explicabo fugit praesentium maxime reprehenderit voluptatem vel natus alias quas! Modi repellat non magni saepe quibusdam rerum quae distinctio veritatis necessitatibus facilis error odio natus maiores cumque architecto iure ipsum vero temporibus hic delectus, facere culpa ipsa ea? Quaerat voluptas nesciunt dicta praesentium excepturi accusantium beatae aut quo veniam tempore laboriosam assumenda earum possimus reprehenderit consequuntur cupiditate rerum quas, iusto officia autem repudiandae? Consequuntur nesciunt earum facilis? Animi consectetur harum neque dicta cum fugit, velit dignissimos consequuntur perspiciatis suscipit temporibus voluptatibus deleniti, nostrum ut sapiente nemo placeat fuga atque ipsam nisi?</p>
+    <p><b>HELLO WORLD</b></p>
+</div>
+<p><b>HELLO WORLD</b></p>
+<p><b>HELLO WORLD</b></p>
+<br>
+<br>
+<p>margin, border, padding illustration:</p>
+
+<div class="box-06">
+    <p id="margin">MARGIN<span id="border">BORDER<span id="padding">PADDING<span id="content">content</span></span></span></p>
+</div>
+<!--
+<div class="border"><p>border</p>
+    <div class="margin"><p>margin</p>
+        <div class="padding"><p>padding</p></div>
+    </div>
+</div>
+-->
+<br>
+<br>
+<p>border width:</p>
+<br>
+<p class="borderWidth">border-width: 3px 7px 20px 100px</p>
+<br>
+<br>
+<p>border style:</p>
+<br>
+<p class="borderStyle-01">border-style: groove none double ridge</p>
+<p class="borderStyle-02">border-style: dashed outset dotted inset</p>
+<br>
+<br>
+<p>border color:</p>
+<br>
+<p class="borderColor">border-color: rgb(255,0,0) rgb(0,255,0) rgb(0,0,255) rgb(255,255,0)</p>
+<br>
+<br>
+<p>border shorthand:</p>
+<br>
+<p class="borderShorthand">border: 9px solid rgb(255,0,0)</p>
+<br>
+<br>
+<p>padding shorthand:</p>
+<br>
+<p class="paddingShorthand">padding: 10px 400px 10px 400px</p>
+<br>
+<br>
+<p>margin shorthand:</p>
+<br>
+<p class="marginShorthand">margin: 100px 10px 100px 10px</p>
+<br>
+<br>
+<br>
+<br>
+<p>centering content:</p>
+<br>
+<p class="centeringContent-01">margin: 100px auto 100px auto</p>
+<br>
+<br>
+<p>border image:</p>
+<br>
+<p class="borderStyle-03">border image</p>
+<br>
+<br>
+<p class="borderStyle-04">border gradient</p>
+<br>
+<br>
+<p>box shadow:</p>
+<br>
+<div class="boxShadow">
+<p class="boxShadow one">box shadow</p>
+<p class="boxShadow two">inset</p>
+</div>
+<br>
+<br>
+<p>rounded corners:</p>
+<br>
+<div class="roundedCorners">
+    <p>rounded corners</p>
+    <p>rounded corners</p>
+    <p>rounded corners</p>
+    <p>rounded corners</p>
+</div>
+<br>
+<br>
+<p>shapes:</p>
+<br>
+<p class="triangle">triangle</p>
+<br>
+<p class="circle">circle</p>
+<br>
+<br>
+<p id=topic-4-css></p>
+<h3>Lists, Tables, and Forms:</h3>
+<br>
+<p>list-style-type:</p>
+<ol class="societalNeeds">
+    <p>ordered list with upper roman numerals</p>
+    <li>Enlightenment</li>
+    <li>Recognition</li>
+    <li>Prosperity</li>
+    <li>Progress</li>
+    <li>Coherence</li>
+    <li>Survival</li>
+</ol>
+<br>
+<br>
+<ul class="circleBulletPoints">
+    <p>unordered list with circle outline bullet points </p>
+    <li>Alpha</li>
+    <li>Bravo</li>
+    <li>Charlie</li>
+    <li>Delta</li>
+    <li>Echo</li>
+    <li>Foxtrot</li>
+</ul>
+<br>
+<br>
+<ul class="imageBulletPoints">
+    <p>unordered list with an image as bullet points </p>
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+    <li>Cuatro</li>
+    <li>Cinco</li>
+    <li>Seis</li>
+    <li>Siete</li>
+</ul>
+<br>
+<br>
+<ul class="indentedBulletPoints">
+    <p>unordered list with indented bullet points positioning </p>
+    <br>
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quasi, eveniet, nostrum sunt maiores libero, inventore iusto odit sed est illum nulla atque nam necessitatibus recusandae ab cum voluptatibus fuga nihil voluptatum tempora. Sed ea facilis voluptas, recusandae quas voluptatem.</li>
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quasi, eveniet, nostrum sunt maiores libero, inventore iusto odit sed est illum nulla atque nam necessitatibus recusandae ab cum voluptatibus fuga nihil voluptatum tempora. Sed ea facilis voluptas, recusandae quas voluptatem.</li>
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quasi, eveniet, nostrum sunt maiores libero, inventore iusto odit sed est illum nulla atque nam necessitatibus recusandae ab cum voluptatibus fuga nihil voluptatum tempora. Sed ea facilis voluptas, recusandae quas voluptatem.</li>
+    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quasi, eveniet, nostrum sunt maiores libero, inventore iusto odit sed est illum nulla atque nam necessitatibus recusandae ab cum voluptatibus fuga nihil voluptatum tempora. Sed ea facilis voluptas, recusandae quas voluptatem.</li>
+</ul>
+<br>
+<br>
+<p>unordered list with shorthand css </p>
+<ul class="listShorthand">
+
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+</ul>
+<br>
+<br>
+<p>table properties:</p>
+<br>
+<div class="auction">
+<h2>&#128293; Car Auction &#128293;</h2>
+<table>
+    <tr>
+        <th>Seller</th>
+        <th>Manufacturer</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Reserve Price</th>
+        <th>Current Bid</th>
+    </tr>
+    <tr>
+        <td>Jim</td>
+        <td>Ford</td>
+        <td>F-150</td>
+        <td>1994</td>
+        <td>$1,500.00</td>
+        <td class="carPrice">$678.00</td>
+    </tr>
+    <tr class="evenRow">
+        <td>Bob</td>
+        <td>Toyota</td>
+        <td>Celica</td>
+        <td>2004</td>
+        <td>$3,200.00</td>
+        <td class="carPrice">$940.00</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Honda</td>
+        <td>Accord</td>
+        <td>1999</td>
+        <td>$4,500.00</td>
+        <td class="carPrice">$1500.00</td>
+    </tr>
+</table>
+</div>
+<br>
+<br>
+<p>empty cells & gaps:</p>
+<br>
+<p>table no changes</p>
+<table class="emptyTable-01">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4</td>
+    </tr>
+</table>
+<br>
+<p>table hide empty cells</p>
+<table class="emptyTable-02">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4</td>
+    </tr>
+</table>
+<br>
+<p>table border spacing</p>
+<table class="emptyTable-03">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4</td>
+    </tr>
+</table>
+<br>
+<p>td hover shadow</p>
+<table class="emptyTable-04">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>4</td>
+    </tr>
+</table>
+<br>
+<br>
+<p>form styling:</p>
+<br>
+<form action="http://example.php" method="post">
+        <input id="emailLogo" type="text">
+</form>
+<br>
+<br>
+<p>styling fieldsets & legends:</p>
+<br>
+<form class="intakeForm" action="http://example.php" method="post">
+    <h2>Client Intake Form</h2>
+    <br>
+    <fieldset>
+        <legend>PERSONAL INFORMATION</legend>
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName">
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName">
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="gender" value="gender">
+        <label for="other">Other</label>
+        <br>
+        <label for="address">Street Address:</label>
+        <input type="text" name="address" id="address" size="50">
+        <br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state">
+        <br>
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" name="zipCode" id="zipCode">
+    </fieldset>
+    <fieldset>
+        <legend>SERVICE REQUEST</legend>
+        <label for="reasonForService">What is the reason for your visit today?</label>
+        <input type="text" name="reasonForService" id="reasonForService" size="65">
+        <br>
+        <label for="hearAboutUs">How did you hear about us?</label>
+        <input type="text" name="hearAboutUs" id="hearAboutUs" size="65">
+    </fieldset>
+    <fieldset>
+        <legend>SIGNATURE</legend>
+        <label for="signature">Signature:</label>
+        <input type="text" name="signature" id="signature">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+    </fieldset>
+    <br>
+    <button class="submitForm" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+</form>
+<br>
+<br>
+<p>cursor styles:</p>
+<br>
+<div class="cursorStyle">
+    <p>Cursor Style</p>
+</div>
+<br>
+<p>hover outline:</p>
+<br>
+<div class="hoverOutline">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque dolorum laborum accusantium consequatur sequi eius natus, quis magni hic aliquam repellendus impedit? Reiciendis obcaecati dignissimos voluptatem sint quos culpa veniam rem aperiam amet nostrum molestiae, ex quod ab facere hic odit perferendis quas necessitatibus accusamus fugit molestias? Dignissimos, porro.</p>
+</div>
 
 
 
@@ -215,6 +612,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
 <br>
 <br>
 <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||FORM||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
