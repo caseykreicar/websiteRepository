@@ -47,11 +47,10 @@ h5 {
     background-color: var(--black);
     color: var(--white);
 }
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||BOXES||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| BOXES ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 #paragraphExample01 span {
     color: rgb(255,0,0);
     text-transform: uppercase;
-    /*border is drawn inside the element's border*/
     border: 1px solid rgb(0,0,0);
     /*ouline is drawn outside the element's border, however is still within the margin*/
     outline: 2px dashed;
@@ -95,7 +94,6 @@ h5 {
 }
 
 .phScaleContainer {
-    /*margins affect outline size*/
     outline: 2px dashed;
     /*outermost*/
     margin-left: 10px;
@@ -211,7 +209,7 @@ h5 {
 .letter.orange {
     color: rgb(255,165,0);
 }
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||TEXT||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| TEXT ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 .systemUiText {
     font-family: system-ui;
@@ -389,7 +387,7 @@ h5 {
     color: rgb(0,0,255)
 }
 
-/*||||||||||||||||||||||||||||||||||||||||||||ANIMATE TEXT or ROTATE TEXT ELEMENTS IN AND OUT|||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||ANIMATE TEXT or ROTATE TEXT ELEMENTS IN AND OUT||||||||||||||||||||||||||||*/
 
 .rotatingText { 
     align-items: center;
@@ -484,7 +482,7 @@ h5 {
     }
   }
   
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||ROTATING IMAGE||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||ROTATING IMAGE||||||||||||||||||||||||||||||||||||||||||||||*/
 /*see if you can make the rotating image the entire background?*/
 .rotatingImage {
     animation: rotation 4s infinite linear;
@@ -500,7 +498,7 @@ h5 {
     }
   }
 
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||BOXES||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| BOXES ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 #box-01 {
     width: 200px;
@@ -749,7 +747,7 @@ margin-left: auto;
 }
 
 
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||LISTS, TABLES, FORMS||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| LISTS, TABLES, FORMS ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 .societalNeeds {
     list-style-type: upper-roman;
@@ -951,6 +949,8 @@ margin-left: auto;
     float: right;
 }
 
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| LAYOUT ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
 .hoverOutline p:hover {
     outline: 1px solid red;
 }
@@ -958,6 +958,548 @@ margin-left: auto;
 .hoverOutline:hover {
     outline: 1px solid black;
 }
+
+.layout:hover {
+    border: 1px solid black;
+}
+
+.layout p:hover {
+    outline: 1px solid red;
+}
+
+
+.layout.relative span {
+    position: relative;
+    left: 100px;
+    bottom: 18px;
+}
+
+.layout.relative span:hover {
+    outline: 2px solid blue;
+    font-size: 18px;
+}
+
+.layout.absolute span {
+    position: absolute;
+}
+
+.layout.absolute span:hover {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+}
+
+/*.layout.fixed.paragraph {
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    margin: 0px;
+    outline: none 
+}
+*/
+
+.layout.floating span {
+    float: left;
+}
+
+.layout.floating span:hover {
+    outline: 2px solid blue;
+}
+
+.layout.zIndex span {
+    position: relative;
+    right: 10px;
+    top: 20px;
+}
+
+.layout.zIndex span:hover {
+    background-color: yellow;
+    color: grey;
+    font-size: 18px;
+}
+
+.layout.zIndex.bottom span:hover {
+    z-index: -5;
+    font-size: 24px;
+}
+
+.layout.zIndex.top span {
+    z-index: 5;
+}
+
+.stackedCircle {
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height: 400px;
+}
+
+.stackedCircle.one {
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    border-radius: 360px;
+    opacity: 95% !important;
+}
+
+.stackedCircle.two {
+    position: relative;
+    top: 50px;
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    border-radius: 360px;
+    opacity: 85% !important;
+}
+
+.stackedCircle.three {
+    position: relative;
+    top: 50px;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 360px;
+    opacity: 75% !important;
+}
+
+.stackedCircle.four {
+    position: relative;
+    top: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    border-radius: 360px;
+    opacity: 65% !important;
+}
+
+.stackedCircle.five {
+    position: relative;
+    top: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 360px;
+    opacity: 55% !important;
+}
+
+.stackedCircle.six {
+    position: relative;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 360px;
+    opacity: 45% !important;
+}
+
+.stackedCircle.six p {
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 40px;
+    opacity: 45% !important;
+}
+
+.stackedCircle:hover {
+    opacity: 100% !important;
+    cursor: pointer !important;
+}
+
+.sideBySide {
+    margin-bottom: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px;
+    padding: 35px;
+    outline: 1px solid black;
+    height: 600px;
+}
+
+.sideBySide p {
+    border: 1px solid black;
+    background: lightblue;
+    width: 240px;
+    float: left;
+    margin: 15px;
+    padding: 15px;
+}
+
+.sideBySide.noTouchRight {
+    outline: 4px solid black;
+    background: lightblue;
+    width: 240px;
+    height: 160px;
+    clear: both;
+    margin: 15px;
+    padding: 15px;
+}
+
+.createMargin {
+    margin-top: 100px;
+}
+
+.column.a {
+    float: left;
+    width: 300px;
+    margin: 10px;
+}
+
+.column.b {
+    float: left;
+    width: 300px;
+    margin: 10px;
+}
+
+.column.c {
+    float: left;
+    width: 300px;
+    margin: 10px;
+}
+
+.column.a:hover {
+    outline: 2px solid red;    
+}
+
+.column.b:hover {
+    outline: 2px solid red;    
+}
+
+.column.c:hover {
+    outline: 2px solid red;    
+}
+
+.column.d:hover {
+    outline: 2px solid red;    
+}
+
+.column.e:hover {
+    outline: 2px solid red;    
+}
+
+.column.f:hover {
+    outline: 2px solid red;    
+}
+
+.fixedBannerLayout {
+    width: 960px;
+    margin: 0 auto;
+    outline: 1px solid black;
+}
+
+#content {
+    overflow: auto;
+    height: 30%;
+}
+
+.fixedBannerLayout {
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    padding: 10px;
+    margin: 10px;
+    outline: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fixedBannerLayout li {
+    display: inline;
+    padding: 70px;
+}
+
+.fixedBannerHeader {
+    text-align: center;
+}
+
+#feature {
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    padding: 10px;
+    margin: 10px;
+    outline: 1px solid black;
+}
+
+.fixedFooter {
+    background-color: lightcoral;
+    color: white;
+    outline: 1px solid black;
+    font-size: x-large;
+    padding: 10px;
+    margin: 10px;
+}
+
+.fixedWidthColumnOne {
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    outline: 1px solid black;
+    float: left;
+    margin: 10px;
+    width: 600px;
+}
+
+.fixedWidthColumnTwo {
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    outline: 1px solid black;
+    float: left;
+    margin: 10px;
+    width: 600px;
+}
+
+.fixedWidthColumnThree {
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    outline: 1px solid black;
+    float: left;
+    margin: 10px;
+    width: 600px;
+}
+
+.liquidBannerLayout {
+    width: 90%;
+    background-color: lightcoral;
+    color: white;
+    outline: 1px solid black;
+}
+
+
+.liquidBannerLayout li {
+    display: inline;
+}
+
+.liquidBannerHeader {
+    text-align: center;
+}
+
+
+.liquidFooter {
+    background-color: lightcoral;
+    color: white;
+    outline: 1px solid black;
+
+}
+
+.liquidWidthColumnOne {
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    outline: 1px solid black;
+    width: 30%;
+    float: left;
+    padding: .5em;
+    margin: 1%;
+}
+
+.liquidWidthColumnTwo {
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    outline: 1px solid black;
+    width: 30%;
+    float: left;
+    padding: .5em;
+    margin: 1%;
+}
+
+.liquidWidthColumnThree {
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+    outline: 1px solid black;
+    width: 30%;
+    float: left;
+    padding: .5em;
+    margin: 1%;
+}
+
+.pixels_960 {
+    margin-left: auto;
+    margin-right:auto;
+    width: 960px;
+    /* outline outlines the border  */
+    text-align: center;
+    margin-bottom: 500px;
+}
+
+/*
+.pixels_960 div {
+    margin-top: 50px;
+}
+*/
+
+#gridType {
+    outline: 1px solid black;
+    margin-bottom: 45px;
+}
+
+.pixels_960 p {
+    outline: 1px dashed green;
+    height: 60px;
+}
+
+.grid_12 {
+    margin: 10px;
+}
+
+.grid_4 {
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+
+.grid_6 {
+    width: 460px;
+    float: left;
+    margin: 10px;
+}
+
+.grid_2 {
+    width: 140px;
+    float: left;
+    margin: 10px;
+}
+
+.grid_3 {
+    width: 220px;
+    float: left;
+    margin: 10px;
+}
+
+#gridTypeEnd {
+    outline: 1px solid black;
+    margin-bottom: 45px;
+    width: 960px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| IMAGES ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+img.small {
+    width: 220px;
+    height: 360px;
+}
+
+img.medium {
+    width: 440px;
+    height: 720px;
+}
+
+img.large {
+    width: 660px;
+    height: 1280px;
+}
+
+/* you can more easily identify the classes element using this selector method */
+img.alignLeft {
+    float: left;
+    margin: 4px;
+}
+
+.alignRight {
+    float: right;
+    margin: 4px;
+}
+
+/*align images on center of page*/
+.small.alignCenter {
+    display: block;
+    margin: 0px auto;
+}
+
+p.imageBackgroundWhiteText {
+    color: white;
+    background-image: url("./debianBackground.jpg");
+    font-weight: 600;
+    margin: 4px;
+    padding: 12px;
+    outline: 2px solid black;
+} 
+
+.repeatX {
+    background-image: url("./emailLogo.png");
+    background-repeat: repeat-x;
+}
+
+.repeatY {
+    background-image: url("./emailLogo.png");
+    background-repeat: repeat-y;
+}
+
+.positionTopRight {
+    background-image: url("./emailLogo.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.positionCenterCenter {
+    background-image: url("./emailLogo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.positionLeftBottom {
+    background-image: url("./emailLogo.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.positionPercentage {
+    background-image: url("./emailLogo.png");
+    background-repeat: no-repeat;
+    background-position: 75% 65%;
+}
+
+.imageShorthand {
+    outline: 1px solid black;
+    background: 
+        url("./emailLogo.png")
+        no-repeat top left,
+        url("./emailLogo.png")
+        no-repeat top right,
+        url("./emailLogo.png")
+        no-repeat bottom right,
+        url("./emailLogo.png")
+        no-repeat center center,
+        url("./emailLogo.png")
+        no-repeat bottom left;
+}
+
+.button {
+    height: 220px;
+    width: 160px;
+    background-image: url("./1.png");
+    background-position: -30px;
+    background-repeat: no-repeat;
+}
+
+div#one1:hover {
+    height: 220px;
+    width: 160px;
+    background-image: url("./2.png");
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+
+div#one1:active {
+    height: 220px;
+    width: 160px;
+    background-image: url("./3.png");
+    background-position: 40px 
+}
+
+
+
+
+
 
 
 
@@ -1226,6 +1768,61 @@ Attribute Selectors:
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
+Positioning of Elements:  
+
+Normal Flow - 
+
+Relative - move element from normal flow by specified measurement ie... (x)pixels from original placement by top, bottom, left, right directions
+
+Absolute - other surrounding elements ignore the space this element normally is placed in
+
+Fixed - 
+
+Floating - 
+
+          
+
+Grids help users predict where to find information and create continuity between pages (common one is 960 pixel grid)
+these grids create vertical columns to appropriately size element boxes usually dimensions are in increments of ten,
+example in book shows 12 vertical columns with 60 pixel width, 20 pixel margin between column and 10 pixel margin on right and left side of page
+
+_|_________________________________________________960px - 1000px____________________________________________________|_      ___
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |  570px - 600px
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ |                                                                                                                   |        |
+ | __________________________________________________________________________________________________________________|       _|_
+ |                                                                                                                   |
+ |                                                                                                                   |
+ |                                                                                                                   |
+ |                                                                                                                   |
+ |                                                                                                                   |
+ |                                                                                                                   |
+ |                                                                                                                   |
+ |                                                                                                                   |
+ |                                                                                                                   |
+___________________________________________________________________________
+
+
+CSS frameworks - provides code for layout grids, styling forms, creating printer-friendly versions of pages.
+(disadvantage to frameworks - class names are usually specifically named for controlling the presentation of the page, and these frameworks usually have more code than you actually need)
+
+
+Multiple CSS stylesheets - useful for organizing certain elements ie... modular (forms stylesheet, tables stylesheet, font stylesheet) 
+
+git remote push test on db desktop
+
+git push to remote repository from db laptop
+
 HTML NOTES:
 
 Multiple Identifiers (ie... class and classes) with inheritance:
@@ -1233,7 +1830,7 @@ Multiple Identifiers (ie... class and classes) with inheritance:
 HTML class IN HTML=   <p class="className">a unique paragraph with class attribute</p>
 HTML class IN CSS =   .className
 
-HTML classes IN HTML=   <p class="className paragraph-1">a child of the className paragraph class</p>
+HTML classes IN HTML=   <p class="className paragraph-1"> paragraph-1 is a child of the className paragraph class</p>
 HTML classes IN CSS =   .className.paragraph-1 {}
 
 Always use fallback fonts
