@@ -1662,6 +1662,386 @@ details {
     background-color: rgb(255,205,205)
   }
 
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||freeCodeCamp projects:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 40%;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+  }
+  
+  .line:nth-of-type(2) {
+    transform: rotate(60deg);
+  }
+  .line:nth-of-type(3) {
+    transform: rotate(120deg);
+  }
+  .line:nth-of-type(4) {
+    transform: rotate(180deg);
+  }
+  .line:nth-of-type(5) {
+    transform: rotate(240deg);
+  }
+  .line:nth-of-type(6) {
+    transform: rotate(300deg);
+  }
+ 
+
+.pole {
+    height: 900px;
+    border: 6px solid black;
+    background-color: black;
+}
+
+  .cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 50%;
+    transform-origin: 50% 0%;
+    animation-name: cabin;
+    animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+  }
+  
+  .cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+    background-color: green;
+    z-index: 1;
+  }
+  .cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+  }
+  .cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+    background-color: green;
+    z-index: 1;
+  }
+  .cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+  }
+  .cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+    background-color: green;
+    z-index: 1;
+  }
+  .cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+  }
+  
+  @keyframes wheel {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+  }
+  
+  @keyframes cabin {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(-360deg);
+     }
+  }
+
+#santaImage {
+    height: 110%;
+    position: absolute;
+    top: -74px;
+    left: -8px;
+    z-index: -1;
+}
+
+#penguinImage {
+    height: 90%;
+    position: absolute;
+    top: -80px;
+    left: 15px;
+    z-index: -3;
+}
+
+:root {
+    --penguin-face: white;
+    --penguin-picorna: orange;
+    --penguin-skin: gray;
+  }
+  
+  .body-background {
+    background-image: url(./snow.gif);
+    width: 1000px;
+    height: 740px;
+    margin: auto;
+  }
+  
+  
+  .penguin {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 75px;
+    z-index: 4;
+    position: relative;
+    top: 50%;
+    transition: transform 1s ease-in-out 0ms;
+  }
+  
+  .penguin * {
+    position: absolute;
+  }
+  
+  .penguin:hover {
+    transform: scale(1.5);
+    cursor: not-allowed;
+  }
+  
+  .penguin-head {
+    width: 50%;
+    height: 45%;
+    background: white;
+    border-radius: 70% 70% 65% 65%;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+  }
+  
+  .face {
+    width: 60%;
+    height: 70%;
+    background-color: var(--penguin-face);
+    border-radius: 70% 70% 60% 60%;
+    top: 15%;
+  }
+  
+  .face.left {
+    left: 5%;
+  }
+  
+  .face.right {
+    right: 5%;
+  }
+  
+  .mouth {
+    width: 20%;
+    height: 10%;
+    background-color: black;
+    top: 70%;
+    left: 45%;
+    border-radius: 70% 70% 100% 100%;
+    z-index: 6;
+  }
+  
+  .eye {
+    width: 15%;
+    height: 17%;
+    background-color: black;
+    top: 40%;
+    border-radius: 50%;
+  }
+  
+  .eye.left {
+    left: 25%;
+  }
+  
+  .eye.right {
+    right: 25%;
+  }
+  
+  .eye-lid {
+    width: 150%;
+    height: 150%;
+    background-color: black;
+    top: -30%;
+    left: -23%;
+    border-radius: 100%;
+  }
+  
+  .blush {
+    width: 10%;
+    height: 10%;
+    background-color: white;
+    top: 45%;
+    border-radius: 50%;
+  }
+  
+  .blush.left {
+    left: 25%;
+  }
+  
+  .blush.right {
+    right: 25%;
+  }
+  
+  .nose {
+    background-color: white 100%;
+    border-radius: 50%;
+    left: 43%;
+    top: 55%;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 65px solid orange;
+    animation: 15s linear infinite noseFall;
+    
+  } 
+  
+  .shirt {
+    font: bold 25px Helvetica, sans-serif;
+    top: 135px;
+    left: 127.5px;
+    z-index: 1;
+    color: #6a6969;
+  }
+  
+  .shirt div {
+    font-weight:  initial;
+    top: 22.5px;
+    left: 12px;
+    color: black;
+  }
+
+  .shirt p {
+    color: black;
+  }
+  
+  .penguin-body {
+    width: 53%;
+    height: 45%;
+    background: white;
+    border-radius: 80% 80% 100% 100%;
+    top: 40%;
+    left: 23.5%;
+  }
+
+  .penguin-body-bottom {
+    width: 120%;
+    height: 120%;
+    background: white;
+    border-radius: 80% 80% 100% 100%;
+    top: 75%;
+    left: -10%;
+  }
+  
+  .penguin-body::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    background-color: white;
+    top: 10%;
+    left: 25%;
+    border-radius: 0% 0% 100% 100%;
+    opacity: 70%;
+  }
+  
+  .arm {
+    width: 10%;
+    height: 60%;
+    background: brown;
+    border-radius: 5% 50% 50% 50%;
+    z-index: -1;
+  }
+  
+  .arm.left {
+    top: 35%;
+    left: 5%;
+    transform-origin: top left; 
+    transform: rotate(130deg) scaleX(-1);
+    animation: 3s linear infinite wave;
+  }
+  
+  .arm.right {
+    top: 15%;
+    right: -15%;
+    transform: rotate(-45deg);
+  }
+
+
+  .arm.right.forearm {
+    top: 45%;
+    right: 225%;
+    height: 100%;
+    width: 80%;
+    transform: rotate(270deg);
+    border-radius: 50% 50% 50% 50%;
+  }
+
+  .arm.left.forearm {
+    top: 95%;
+    left: -15%;
+    transform-origin: top left;
+    height: 100%;
+    width: 80%;
+    transform: rotate(300deg);
+    border-radius: 50% 50% 50% 50%;
+    animation: none;
+  } 
+
+  .freeCodeCampLogo {
+    width: 650%;
+    top: 105%;
+  }
+  
+  @keyframes wave {
+    10% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+    20% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+    30% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+    40% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+  }
+  
+
+  @keyframes noseFall {
+    10% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+  }
+  
+
+
+
+
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||NOTES:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 /*
