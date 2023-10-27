@@ -531,6 +531,9 @@ h5 {
     animation: rotation 4s forwards;
 }
 
+.toiletAnimation.handle:active {
+    transform: translateY(-70px) rotate(-8deg);
+}
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| BOXES ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
@@ -2072,7 +2075,40 @@ details {
     }
   }
   
-
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+  }
+  
+  .gallery {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 550px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
 
 
 
