@@ -485,18 +485,52 @@ h5 {
 /*|||||||||||||||||||||||||||||||||||||||||ROTATING IMAGE||||||||||||||||||||||||||||||||||||||||||||||*/
 /*see if you can make the rotating image the entire background?*/
 .rotatingImage {
-    animation: rotation 4s infinite linear;
-    margin-left: 15px;
+    position: absolute;
+    left: 360px;
   }
   
   @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
+    0% {
+        height: 16.6%;
+        width: 5.3%;
+      }
+      
+    100% {
+        height:0%;
+        width: 0%;
+        transform: rotate(359deg) translateX(10px) translateY(60px) translateX(-10px);
+      }
   }
+
+.toilet {
+    z-index: -1;
+    width: 600px;
+    height: 600px;
+    transform: translateX(40px);
+    transform: translateY(-280px);
+}
+
+.toiletAnimation {
+    position: relative;
+}
+
+.toiletAnimation.handle {
+    width: 40px;
+    height: 10px;
+    background:black;
+    position: absolute;
+    left: 80px;
+    transform: translateY(-70px);
+    z-index: 2;
+    overflow: auto;
+}
+
+
+
+.toiletAnimation.handle:hover ~ .rotatingImage {
+    animation: rotation 4s forwards;
+}
+
 
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| BOXES ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
