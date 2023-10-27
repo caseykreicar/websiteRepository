@@ -83,6 +83,7 @@
 
 .rotatingImage {
   animation: rotation 18s infinite linear;
+  min-width: 80px;
 }
 
 .rotatingImage:hover {
@@ -143,6 +144,7 @@
     opacity: 1;
     transform: translate(0, 0);
   }
+  
 }
 
 /*||||||||||||||||||||||||||||||||||||||||ELEMENTS, CLASSES, IDs, STYLING|||||||||||||||||||||||||||||||||||||||*/
@@ -160,7 +162,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 70px;
   font-weight: 300;
   text-shadow: 2px 2px 0px rgb(255,255,255);
@@ -175,7 +177,7 @@ h1 b {
 
 .dark h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 70px;
   font-weight: 300;
   margin: 10px 0;
@@ -346,6 +348,18 @@ header {
   background-size: cover;
   background-color: rgb(175, 119, 227);
   box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
+}
+
+.rvalogo {
+  max-width: 100%;
+  min-width: 320px;
+  height: auto;
+}
+
+@media only screen and (max-width: 320px) {
+  .myName {
+    font-size: 40%;
+  }
 }
 
 
