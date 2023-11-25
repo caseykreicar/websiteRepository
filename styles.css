@@ -147,7 +147,7 @@
   
 }
 
-/*||||||||||||||||||||||||||||||||||||||||ELEMENTS, CLASSES, IDs, STYLING|||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||ELEMENTS, CLASSES, & IDs STYLING|||||||||||||||||||||||||||||||||||||||*/
 
 body {
   text-align: center;
@@ -155,7 +155,7 @@ body {
   background-color: rgb(240, 240, 240);
   font-family: 'Poppins', sans-serif;
   color:rgb(57, 57, 57);
-
+  margin: 0;
 }
 
 h1 {
@@ -165,6 +165,7 @@ h1 {
   font-weight: 300;
   text-shadow: 2px 2px 0px rgb(255,255,255);
   margin: 10px 0;
+  margin-bottom: 32px;
   color: rgb(0,0,0);
 }
 
@@ -307,7 +308,7 @@ header {
 
 #oduLink {
   color: rgb(0,210,0);
-  text-shadow: 0px -1px 3px rgb(0,0,0);
+  text-shadow: 1px 1px 0px rgb(255,255,255);
 }
 
 .main-text {
@@ -361,6 +362,11 @@ header {
   max-width: 100%;
   min-width: 320px;
   height: auto;
+}
+
+#oduLink {
+  color: rgb(0,55,104);
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 320px) {
@@ -418,7 +424,7 @@ hr:after {
     top: -13px;
 }
 
-/*|||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||squirrel animation||||||||||||||||||||*/
 .squirrel-container{
   display: flex;
   justify-content: left;
@@ -429,7 +435,7 @@ hr:after {
 }
 
 .squirrel.show {
-  animation: fade2 2.8s forwards;
+  animation: fade2 5.5s forwards;
   opacity: 1;
   transform: translate(170px, 170px);
 }
@@ -437,7 +443,7 @@ hr:after {
 @keyframes fade2 {
   0% {
     opacity: 1;
-    transform: translate(-85px, 0px);
+    transform: translate(-125px, 0px);
   }
   100% {
     opacity: 1;
@@ -451,8 +457,14 @@ footer {
     display: flex;
     justify-content: center;
     padding: 50px;
-    background-color:rgb(155, 155, 155);
+    margin: 8px;
+    background-color: black;
     border-radius: 90px;
+}
+
+#footer a {
+  color: rgb(253,190,17);
+  text-shadow: 1px 0px 0px rgb(255,255,255);
 }
 
 .dark footer {

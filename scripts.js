@@ -5,7 +5,7 @@ switchElement.addEventListener('click', () => {
   document.body.classList.toggle('dark')
 })
 
-/*fade in animation*/
+/*fade in animation1 my photo*/
 const images = document.querySelectorAll(".image")
 
 const observer = new IntersectionObserver(entries => { 
@@ -22,7 +22,7 @@ images.forEach(image => {
   observer.observe(image)
 })
 
-/*fade in animation2*/
+/*fade in animation2 squirrel*/
 const squirrel = document.querySelectorAll(".squirrel")
 
 const observer2 = new IntersectionObserver(entries => { 
