@@ -434,8 +434,12 @@ hr:after {
   opacity: 1;
 }
 
+.squirrel:hover {
+  cursor: grab;
+}
+
 .squirrel.show {
-  animation: fade2 5.5s forwards;
+  animation: fade2 7.5s forwards;
   opacity: 1;
   transform: translate(170px, 170px);
 }
@@ -448,9 +452,36 @@ hr:after {
   100% {
     opacity: 1;
     transform: translate(0, 0);
-  }
-  
+  }  
 }
+/*||||||||||||||||||||||||||||||||||*/
+
+/*|||||||||||||||||speech bubble animation||||||||||||||||||||*/
+
+.bubbleContainer {
+  margin-top: 120px;
+}
+
+speechBubble {
+  opacity: 0;
+}
+
+.speechBubble.show {
+  animation: zoom 2s forwards;
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+
+  @keyframes zoom { 
+    0% {
+      opacity: 0;
+    }
+    
+    50%, 100% {
+      opacity: 1;
+    }
+  }
 /*||||||||||||||||||||||||||||||||||*/
 
 footer {
