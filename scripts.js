@@ -21,3 +21,20 @@ const observer = new IntersectionObserver(entries => {
 images.forEach(image => {
   observer.observe(image)
 })
+
+/*fade in animation2*/
+const squirrel = document.querySelectorAll(".squirrel")
+
+const observer2 = new IntersectionObserver(entries => { 
+  entries.forEach(entry => {
+    entry.target.classList.toggle("show", entry.isIntersecting)
+    if (entry.isIntersecting) observer2.unobserve(entry.target)
+  })
+},
+{
+    threshold: .1,
+}
+)
+squirrel.forEach(squirrel => {
+  observer.observe(squirrel)
+})
