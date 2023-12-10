@@ -1,0 +1,86 @@
+/* Retro Snake Game (a modified freeCodeCamp tutorial) */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    background: white;
+  }
+  
+  body {
+    background-color: rgb(170,170,170);
+  }
+
+  .snake{
+    background: linear-gradient(217deg, rgba(0,170,0), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,80,0), rgba(0,0,255,0) 70.71%);
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(22, 22px);
+    grid-template-rows: repeat(22, 22px);
+    margin: 5px;
+    background-color: white;
+  }
+  
+  .game-border-1 {
+    border: rgb(70,70,0) solid 10px;
+    box-shadow: inset 0 0 0 10px rgb(70,70,0); 
+}
+
+.game-border-2 {
+    border: rgb(130,130,0) solid 10px;
+    box-shadow: inset 0 0 0 10px rgb(130,130,0); 
+}
+
+.game-border-3 {
+    border: rgb(90,90,0) solid 10px;
+    box-shadow: inset 0 0 0 10px rgb(90,90,0); 
+}
+
+#instruction-text {
+    position: absolute;
+    color: rgb(23,23,23);
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+    z-index: 1;
+    font-size: 18px;
+    width: 400px;
+    padding: 30px;
+}
+  
+  .scores {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #score,
+  #highScore {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 10px 0;
+  }
+  
+  #highScore {
+    color: lightgoldenrodyellow;
+    display: none;
+  }
+  
+  .game-border-3,
+  #logo {
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .food {
+    background-color: black;
+  }
+  
+  #logo {
+    position: absolute;
+  }
