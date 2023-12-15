@@ -2,7 +2,7 @@
 👋.Hi, I’m @caseykreicar
   \😎.'I’m interested in learning... HTML, CSS, JS, PY, PHP, & SQL.🌱
     ▌l👉 Here is how to reach me ...📫 ✨ kreicarcl@alumni.vcu.edu ✨
-   / \  🌐 Website http://latimere.io
+   / \  🌐 Website http://latimere.us
  _|   |_  
 */
   /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
@@ -240,7 +240,17 @@ header {
 }
 
 .heading {
-  background-color:rgb(185, 185, 185);
+  background-image: url(./Images/flag.png);
+  border-radius: 90px;
+  padding: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.heading-mlis {
+  background-image: url(./Images/bannerfinal.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 90px;
   padding: 30px;
   margin-right: 100px;
@@ -328,15 +338,15 @@ header {
   width: 90%;
   margin: 10%;
   height: 300px;
-  background: linear-gradient(230deg, rgb(176, 255, 176), rgba(255,0,0,0) 25%),
-  linear-gradient(50deg, rgb(176, 255, 176), rgba(0,255,0,0) 45%),
-  linear-gradient(230deg, rgb(176, 176, 255), rgba(0,0,255,0) 100%);
+  background: linear-gradient(230deg, rgb(60, 59, 110), rgba(255,0,0,0) 25%),
+  linear-gradient(50deg, rgb(178, 34, 52), rgba(0,255,0,0) 45%),
+  linear-gradient(230deg, rgb(255, 255, 255), rgba(0,0,255,0) 100%);
   box-shadow: -1px 1px 10px inset black;
   text-align: center;
 }
 
 .square.mlis {
-  background: linear-gradient(230deg, rgb(255, 168, 176), rgba(255,0,0,0) 25%),
+  background: linear-gradient(230deg, rgb(176, 255, 176), rgba(255,0,0,0) 25%),
   linear-gradient(50deg, rgb(176, 255, 176), rgba(0,255,0,0) 45%),
   linear-gradient(230deg, rgb(176, 176, 255), rgba(0,0,255,0) 100%);
 }

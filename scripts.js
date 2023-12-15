@@ -55,3 +55,12 @@ const observer3 = new IntersectionObserver(entries => {
 speechBubble.forEach(speechBubble => {
   observer.observe(speechBubble)
 })
+
+//play easterEgg on click function
+function clickMusic() {
+
+  //On Click
+       document.getElementById('audio').play();
+       
+  }
+
