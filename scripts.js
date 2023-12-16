@@ -1,3 +1,14 @@
+/*
+👋.Hi, I’m @caseykreicar
+  \😎.'I’m interested in learning... HTML, CSS, JS, PY, PHP, & SQL.🌱
+    ▌l👉 Here is how to reach me ...📫 ✨ kreicarcl@alumni.vcu.edu ✨
+   / \  🌐 Website http://latimere.us
+ _|   |_  
+*/
+  /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+ /*|||||||||||||||||||||||||||||||||||||||JS||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
 /*dark mode toggle*/
 const switchElement = document.querySelector('.switch')
 
@@ -63,4 +74,3 @@ function clickMusic() {
        document.getElementById('audio').play();
        
   }
-

@@ -242,16 +242,18 @@ header {
 .heading {
   background-image: url(./Images/flag.png);
   border-radius: 90px;
+  box-shadow: -1px 1px 10px inset black;
   padding: 30px;
   margin-right: 100px;
   margin-left: 100px;
 }
 
 .heading-mlis {
-  background-image: url(./Images/bannerfinal.gif);
+  background-image: url(./Images/bannerfinalV3.gif);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 90px;
+  box-shadow: -1px 1px 10px inset black;
   padding: 30px;
   margin-right: 100px;
   margin-left: 100px;
@@ -259,6 +261,16 @@ header {
 
 .dark .heading {
   background-color: rgb(24,24,23);
+  background-image: none;
+  border-radius: 90px;
+  padding: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.dark .heading-mlis {
+  background-color: rgb(24,24,23);
+  background-image: none;
   border-radius: 90px;
   padding: 30px;
   margin-right: 100px;
